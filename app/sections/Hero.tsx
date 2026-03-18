@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative py-40 bg-gradient-to-br from-[#050b12] via-[#0b1c2d] to-[#02070d] text-white overflow-hidden pt-56 pb-40">
+    <section className="relative py-40 bg-gradient-to-br from-[#050b12] via-[#0b1c2d] to-[#02070d] text-white overflow-hidden pt-36 pb-24 md:pt-56 md:pb-40">
       <div className="absolute inset-0">
         <Image
           src="/images/main1.jpg"
@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/40" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-24 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 md:gap-24 items-center">
         <div>
           <div className="flex items-center gap-4">
             <span className="text-xs tracking-[0.25em] uppercase text-red-500">
@@ -24,7 +24,7 @@ export default function Hero() {
             <span className="h-px w-16 bg-red-500/70" />
           </div>
 
-          <h1 className="mt-10 text-6xl font-semibold leading-[1.02]">
+          <h1 className="mt-8 md:mt-10 text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] md:leading-[1.02]">
             Strategic IP Guidance
             <br />
             for Innovation-Led
@@ -32,12 +32,12 @@ export default function Hero() {
             Organizations
           </h1>
 
-          <p className="mt-8 max-w-md text-lg text-slate-300">
+          <p className="mt-6 md:mt-8 max-w-md text-base md:text-lg text-slate-300">
             IP-MEX advises technology-driven companies on protecting, enforcing,
             and maximizing the value of their intellectual property.
           </p>
 
-          <div className="mt-12 flex items-center gap-8">
+          <div className="mt-10 md:mt-12 flex flex-wrap items-center gap-5 md:gap-8">
             <Link
               href="/contact"
               className="px-7 py-3 text-sm font-medium bg-red-600 hover:bg-red-500 transition-colors"

@@ -21,7 +21,7 @@ export default function AboutPage() {
             About IP-MEX
           </span>
 
-          <h1 className="text-5xl md:text-6xl font-bold mt-8 leading-tight max-w-4xl">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mt-8 leading-tight max-w-4xl">
             A Canadian Intellectual Property Law Firm
           </h1>
 
@@ -36,7 +36,7 @@ export default function AboutPage() {
       <section className="py-32 md:py-40">
         <div className="max-w-7xl mx-auto px-6">
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-10 md:mb-24">
 
             <div>
               <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
