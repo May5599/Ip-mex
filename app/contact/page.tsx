@@ -21,7 +21,7 @@ export default function ContactPage() {
             Contact
           </span>
 
-          <h1 className="text-5xl md:text-6xl font-bold mt-8 leading-tight max-w-3xl">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mt-8 leading-tight max-w-3xl">
             Talk to our IP lawyers and registered agents
           </h1>
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ContactPrompt() {
   return (
-    <section className="relative py-44 overflow-hidden text-white">
+    <section className="relative py-20 md:py-44 overflow-hidden text-white">
       {/* dark transition */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#05080f]/80 via-[#070c16] to-[#03070d]" />
 
@@ -12,13 +12,13 @@ export default function ContactPrompt() {
       
 
       <div className="relative max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-12 gap-24 items-center">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-24 items-center">
           <div className="md:col-span-7">
             <span className="block text-xs tracking-[0.32em] uppercase text-red-500 mb-10">
               Get Started
             </span>
 
-            <h2 className="text-5xl leading-[1.04] font-semibold max-w-2xl">
+            <h2 className="text-3xl md:text-5xl leading-[1.04] font-semibold max-w-2xl">
               Start a conversation about your intellectual property
             </h2>
 

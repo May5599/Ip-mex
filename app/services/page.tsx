@@ -52,18 +52,18 @@ export default function ServicesPage() {
     <main className="bg-[#050b12] text-white">
 
       {/* HERO SECTION */}
-      <section className="relative pt-60 pb-40 px-6 border-b border-white/10">
+      <section className="relative pt-36 pb-20 md:pt-60 md:pb-40 px-6 border-b border-white/10">
         <div className="max-w-6xl mx-auto text-center">
 
           <span className="block text-xs tracking-[0.35em] uppercase text-red-500 mb-8">
             Services
           </span>
 
-          <h1 className="text-5xl md:text-6xl font-semibold mb-10 leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold mb-8 md:mb-10 leading-tight">
             Strategic Intellectual Property Advisory
           </h1>
 
-          <p className="text-xl md:text-2xl text-neutral-300 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-lg md:text-xl lg:text-2xl text-neutral-300 leading-relaxed max-w-4xl mx-auto">
             We deliver structured, defensible intellectual property strategies 
             aligned with innovation, commercialization, and long-term enterprise value.
           </p>
@@ -72,8 +72,8 @@ export default function ServicesPage() {
 
 
       {/* FEATURED SERVICES */}
-      <section className="py-32 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+      <section className="py-16 md:py-32 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16">
 
           {SERVICES.filter(s => s.featured).map(service => (
             <Link
@@ -107,10 +107,10 @@ export default function ServicesPage() {
 
 
       {/* ALL SERVICES GRID */}
-      <section className="py-32 px-6 border-t border-white/10">
+      <section className="py-16 md:py-32 px-6 border-t border-white/10">
         <div className="max-w-7xl mx-auto">
 
-          <h2 className="text-4xl font-semibold mb-20">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-10 md:mb-20">
             Complete Service Offering
           </h2>
 
@@ -140,10 +140,10 @@ export default function ServicesPage() {
 
 
       {/* SUB SERVICES SECTION */}
-      <section className="py-32 px-6 border-t border-white/10">
+      <section className="py-16 md:py-32 px-6 border-t border-white/10">
         <div className="max-w-7xl mx-auto">
 
-          <h2 className="text-4xl font-semibold mb-20">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-10 md:mb-20">
             Specialized Capabilities
           </h2>
 
@@ -173,10 +173,10 @@ export default function ServicesPage() {
 
 
       {/* CTA SECTION */}
-      <section className="py-40 px-6 border-t border-white/10 text-center">
+      <section className="py-20 md:py-40 px-6 border-t border-white/10 text-center">
         <div className="max-w-4xl mx-auto">
 
-          <h2 className="text-4xl md:text-5xl font-semibold mb-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 md:mb-8">
             Structure Your Intellectual Property Strategy
           </h2>
 
