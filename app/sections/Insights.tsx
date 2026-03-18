@@ -1,7 +1,7 @@
 export default function Insights() {
   return (
     <section className="relative py-20 md:py-44 bg-gradient-to-b from-white via-slate-50 to-white text-slate-900 overflow-hidden">
-      {/* elegant light texhttps://mrlandlord-dash.vercel.app/Mrlandlord.ca_FAW%20.svgture */}
+      {/* elegant light texture */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 opacity-[0.06] bg-[radial-gradient(circle_at_1px_1px,rgba(15,23,42,0.35)_1px,transparent_0)] [background-size:40px_40px]" />
       </div>
