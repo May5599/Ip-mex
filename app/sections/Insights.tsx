@@ -1,20 +1,20 @@
 export default function Insights() {
   return (
-    <section className="relative py-44 bg-gradient-to-b from-white via-slate-50 to-white text-slate-900 overflow-hidden">
+    <section className="relative py-16 md:py-44 bg-gradient-to-b from-white via-slate-50 to-white text-slate-900 overflow-hidden">
       {/* elegant light texhttps://mrlandlord-dash.vercel.app/Mrlandlord.ca_FAW%20.svgture */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 opacity-[0.06] bg-[radial-gradient(circle_at_1px_1px,rgba(15,23,42,0.35)_1px,transparent_0)] [background-size:40px_40px]" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-12 gap-24 items-start">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-24 items-start">
           {/* left column */}
           <div className="md:col-span-5">
             <span className="block text-xs tracking-[0.3em] uppercase text-red-600 mb-8">
               Insights
             </span>
 
-            <h2 className="text-5xl leading-[1.05] font-semibold max-w-md">
+            <h2 className="text-3xl md:text-5xl leading-[1.05] font-semibold max-w-md">
               Clear thinking on intellectual property in complex markets
             </h2>
           </div>

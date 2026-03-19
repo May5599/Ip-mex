@@ -1,12 +1,12 @@
 export default function Credibility() {
   return (
-    <section className="relative py-40 bg-gradient-to-b from-white to-neutral-50 text-neutral-900 overflow-hidden">
+    <section className="relative py-20 md:py-40 bg-gradient-to-b from-white to-neutral-50 text-neutral-900 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 left-0 w-[40rem] h-[40rem] bg-red-500/5 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 right-0 w-[32rem] h-[32rem] bg-slate-900/5 rounded-full blur-[120px]" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-20 items-start">
+      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-10 md:gap-20 items-start">
         <div className="md:col-span-5">
           <span className="block text-xs tracking-[0.25em] uppercase text-red-600 mb-6">
             Credibility

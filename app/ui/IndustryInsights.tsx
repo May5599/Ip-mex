@@ -6,7 +6,7 @@ export default function IndustryInsights() {
 
 const [open, setOpen] = useState<number | null>(null)
 
-return ( <section className="py-40 bg-[#050b12] text-white">
+return ( <section className="py-16 md:py-40 bg-[#050b12] text-white">
 
   <div className="max-w-7xl mx-auto px-6">
 
@@ -33,7 +33,7 @@ return ( <section className="py-40 bg-[#050b12] text-white">
           className="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
         />
 
-        <div className="p-6 flex flex-col h-[220px]">
+        <div className="p-6 flex flex-col min-h-[220px]">
 
           <h3 className="text-lg font-medium mb-3">
             Strategy in the AI Era
@@ -65,7 +65,7 @@ return ( <section className="py-40 bg-[#050b12] text-white">
           className="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
         />
 
-        <div className="p-6 flex flex-col h-[220px]">
+        <div className="p-6 flex flex-col min-h-[220px]">
 
           <h3 className="text-lg font-medium mb-3">
             Semiconductor Innovation 
@@ -97,7 +97,7 @@ return ( <section className="py-40 bg-[#050b12] text-white">
           className="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
         />
 
-        <div className="p-6 flex flex-col h-[220px]">
+        <div className="p-6 flex flex-col min-h-[220px]">
 
           <h3 className="text-lg font-medium mb-3">
             FinTech and IP Protection
@@ -129,7 +129,7 @@ return ( <section className="py-40 bg-[#050b12] text-white">
           className="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
         />
 
-        <div className="p-6 flex flex-col h-[220px]">
+        <div className="p-6 flex flex-col min-h-[220px]">
 
           <h3 className="text-lg font-medium mb-3">
             Biotech Patent Landscapes
@@ -172,25 +172,25 @@ return ( <section className="py-40 bg-[#050b12] text-white">
 
 
           {open === 1 && (
-            <img src="/insights/ai.jpg" className="w-full h-64 object-cover" />
+            <img src="/insights/ai.jpg" className="w-full h-44 md:h-64 object-cover" />
           )}
 
           {open === 2 && (
-            <img src="/insights/semiconductor.jpg" className="w-full h-64 object-cover" />
+            <img src="/insights/semiconductor.jpg" className="w-full h-44 md:h-64 object-cover" />
           )}
 
           {open === 3 && (
-            <img src="/insights/fintech.jpg" className="w-full h-64 object-cover" />
+            <img src="/insights/fintech.jpg" className="w-full h-44 md:h-64 object-cover" />
           )}
 
           {open === 4 && (
-            <img src="/insights/biotech.jpg" className="w-full h-64 object-cover" />
+            <img src="/insights/biotech.jpg" className="w-full h-44 md:h-64 object-cover" />
           )}
 
         </div>
 
 
-        <div className="p-10">
+        <div className="p-6 md:p-10">
 
           {open === 1 && (
             <>

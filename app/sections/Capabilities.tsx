@@ -28,7 +28,7 @@ const ITEMS = [
 
 export default function Capabilities() {
   return (
-    <section className="relative py-40 overflow-hidden text-white">
+    <section className="relative py-20 md:py-40 overflow-hidden text-white">
       {/* patterned translucent background */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0b1220] via-[#0b1220]/90 to-[#0b1220]">
         <div className="absolute inset-0 opacity-[0.15] bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.4)_1px,transparent_0)] [background-size:28px_28px]" />
@@ -36,7 +36,7 @@ export default function Capabilities() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6">
-        <div className="max-w-xl mb-24">
+        <div className="max-w-xl mb-12 md:mb-24">
           <span className="block text-xs tracking-[0.25em] uppercase text-red-500 mb-6">
             Capabilities
           </span>

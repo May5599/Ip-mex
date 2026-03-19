@@ -14,18 +14,18 @@ export default function AboutPage() {
     <main className="bg-white min-h-screen">
 
       {/* HERO */}
-      <section className="bg-[#050b12] text-white py-32 md:py-48">
+      <section className="bg-[#050b12] text-white pt-28 pb-16 md:py-32 lg:py-48">
         <div className="max-w-7xl mx-auto px-6">
 
           <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
             About IP-MEX
           </span>
 
-          <h1 className="text-5xl md:text-6xl font-bold mt-8 leading-tight max-w-4xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-8 leading-tight max-w-4xl">
             A Canadian Intellectual Property Law Firm
           </h1>
 
-          <p className="text-slate-300 text-xl mt-10 max-w-2xl leading-relaxed">
+          <p className="text-slate-300 text-base md:text-xl mt-6 md:mt-10 max-w-2xl leading-relaxed">
             IP-MEX Inc. is an intellectual property law firm based in Kanata, Ontario. Our team of IP lawyers, registered patent agents, and registered trademark agents provides comprehensive IP legal services to clients across Canada, the United States, and internationally.
           </p>
 
@@ -33,17 +33,17 @@ export default function AboutPage() {
       </section>
 
       {/* FIRM OVERVIEW */}
-      <section className="py-32 md:py-40">
+      <section className="py-16 md:py-32 xl:py-40">
         <div className="max-w-7xl mx-auto px-6">
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16 md:mb-24">
 
             <div>
               <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
                 The Firm
               </span>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mt-6 mb-8">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mt-6 mb-8">
                 IP law practice built on deep technical expertise
               </h2>
 
@@ -90,14 +90,14 @@ export default function AboutPage() {
       </section>
 
       {/* TEAM — Dr. Daisy Williams (Featured — has photo) */}
-      <section className="bg-neutral-50 py-32 md:py-40 border-t border-neutral-200">
+      <section className="bg-neutral-50 py-16 md:py-32 xl:py-40 border-t border-neutral-200">
         <div className="max-w-7xl mx-auto px-6">
 
           <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
             Our Team
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mt-6 mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mt-6 mb-16">
             IP lawyers, registered agents, and prolific inventors
           </h2>
 
@@ -278,14 +278,14 @@ export default function AboutPage() {
       </section>
 
       {/* SCIENTIFIC BACKGROUND */}
-      <section className="py-32 md:py-40">
+      <section className="py-16 md:py-32 xl:py-40">
         <div className="max-w-7xl mx-auto px-6">
 
           <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
             Technical Depth
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mt-6 mb-8 max-w-3xl">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mt-6 mb-8 max-w-3xl">
             Scientists and engineers who practice IP law
           </h2>
 
@@ -329,14 +329,14 @@ export default function AboutPage() {
       </section>
 
       {/* SERVICES */}
-      <section className="bg-neutral-50 py-32 md:py-40 border-t border-neutral-200">
+      <section className="bg-neutral-50 py-16 md:py-32 xl:py-40 border-t border-neutral-200">
         <div className="max-w-7xl mx-auto px-6">
 
           <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
             Legal Services
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mt-6 mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mt-6 mb-16">
             Full-spectrum intellectual property legal services
           </h2>
 
@@ -409,14 +409,14 @@ export default function AboutPage() {
       </section>
 
       {/* WHY CHOOSE IP-MEX */}
-      <section className="py-32 md:py-40">
+      <section className="py-16 md:py-32 xl:py-40">
         <div className="max-w-7xl mx-auto px-6">
 
           <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
             Why IP-MEX
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mt-6 mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mt-6 mb-16">
             A law firm that works at the technical level of your inventors
           </h2>
 
@@ -484,7 +484,7 @@ export default function AboutPage() {
       </section>
 
       {/* CONTACT CTA */}
-      <section className="bg-[#050b12] text-white py-32 md:py-40">
+      <section className="bg-[#050b12] text-white py-16 md:py-32 xl:py-40">
         <div className="max-w-4xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl md:text-5xl font-bold mb-8">

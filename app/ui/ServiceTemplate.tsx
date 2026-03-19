@@ -153,7 +153,7 @@ export default function ServiceTemplate({ service }: Props) {
 
 
 {/* DELIVERABLES */}
-<section className="relative py-40 overflow-hidden text-white">
+<section className="relative py-20 md:py-40 overflow-hidden text-white">
 
   {/* Background System */}
   <div className="absolute inset-0 bg-gradient-to-b from-[#0b1220] via-[#0b1220]/95 to-[#0b1220]">
@@ -241,7 +241,7 @@ export default function ServiceTemplate({ service }: Props) {
 
 {/* INDUSTRIES */}
 {content.industries && (
-  <section className="relative py-44 overflow-hidden text-white">
+  <section className="relative py-20 md:py-44 overflow-hidden text-white">
 
     {/* Background Base */}
     <div className="absolute inset-0 bg-gradient-to-b from-[#0b1220] via-[#0b1220]/95 to-[#0b1220]" />

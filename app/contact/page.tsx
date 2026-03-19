@@ -14,14 +14,14 @@ export default function ContactPage() {
     <main className="bg-white min-h-screen">
 
       {/* HERO */}
-      <section className="bg-[#050b12] text-white py-32 md:py-48">
+      <section className="bg-[#050b12] text-white pt-28 pb-16 md:py-32 lg:py-48">
         <div className="max-w-7xl mx-auto px-6">
 
           <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
             Contact
           </span>
 
-          <h1 className="text-5xl md:text-6xl font-bold mt-8 leading-tight max-w-3xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-8 leading-tight max-w-3xl">
             Talk to our IP lawyers and registered agents
           </h1>
 
@@ -123,9 +123,10 @@ export default function ContactPage() {
                   id="service"
                   name="service"
                   required
+                  defaultValue=""
                   className="w-full border border-neutral-300 rounded-lg px-4 py-3 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm bg-white"
                 >
-                  <option value="" disabled selected>Select the primary service you need</option>
+                  <option value="" disabled>Select the primary service you need</option>
                   <option value="Patents — Drafting & Prosecution">Patents — Drafting & Prosecution</option>
                   <option value="Patent Strategy & Opinions">Patent Strategy & Opinions</option>
                   <option value="Patent Litigation Support">Patent Litigation Support</option>

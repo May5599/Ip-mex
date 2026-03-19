@@ -12,8 +12,8 @@ export default function Footer() {
       {/* soft glow */}
       <div className="absolute -bottom-48 -right-48 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[200px]" />
 
-      <div className="relative max-w-7xl mx-auto px-6 pt-28 pb-16">
-        <div className="grid md:grid-cols-12 gap-20">
+      <div className="relative max-w-7xl mx-auto px-6 pt-16 md:pt-28 pb-16">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-20">
           {/* brand */}
           <div className="md:col-span-4">
             <h3 className="text-white text-lg tracking-widest mb-6">
@@ -78,7 +78,7 @@ export default function Footer() {
         </div>
 
         {/* bottom */}
-        <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="mt-12 md:mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <p className="text-xs text-slate-500">
             © {new Date().getFullYear()} IP-MEX Inc. All rights reserved.
           </p>

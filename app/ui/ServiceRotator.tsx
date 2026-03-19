@@ -391,7 +391,7 @@ export default function ServiceRotator({ items }: Props) {
         {/* Top Accent */}
         <div className="h-[2px] w-full bg-red-500" />
 
-        <div className="px-16 py-20 md:px-24 md:py-28 text-center">
+        <div className="px-8 py-12 sm:px-16 sm:py-20 md:px-24 md:py-28 text-center">
 
           {/* Number */}
           <div className="text-sm tracking-[0.4em] uppercase text-white/40 mb-10">
@@ -401,7 +401,7 @@ export default function ServiceRotator({ items }: Props) {
           {/* Content */}
           <p
             key={activeIndex}
-            className="text-3xl md:text-4xl font-medium leading-snug"
+            className="text-2xl sm:text-3xl md:text-4xl font-medium leading-snug"
           >
             {items[activeIndex]}
           </p>

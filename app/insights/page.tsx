@@ -17,7 +17,7 @@ export default function InsightsPage() {
     <main className="bg-neutral-50 min-h-screen overflow-hidden">
 
       {/* HERO */}
-      <section className="bg-[#050b12] text-white pt-48 pb-40 overflow-hidden">
+      <section className="bg-[#050b12] text-white pt-24 pb-16 md:pt-48 md:pb-40 overflow-hidden">
 
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
 
@@ -28,7 +28,7 @@ export default function InsightsPage() {
               Insights
             </span>
 
-            <h1 className="text-5xl lg:text-7xl font-semibold mt-8 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold mt-8 leading-tight">
               Research, publications, and commentary on
               intellectual property strategy and
               technology innovation
@@ -52,7 +52,7 @@ export default function InsightsPage() {
               src="/hero1.png"
               className="
               relative
-              w-[380px]
+              w-[240px] sm:w-[320px]
               lg:w-[420px]
               drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)]
               floating-image
@@ -66,7 +66,7 @@ export default function InsightsPage() {
       </section>
 
       {/* FEATURED INSIGHT */}
-      <section className="bg-white py-32">
+      <section className="bg-white py-16 md:py-32">
 
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
 
@@ -108,7 +108,7 @@ export default function InsightsPage() {
       </section>
 
       {/* LATEST PUBLICATIONS */}
-      <section className="bg-neutral-50 py-32">
+      <section className="bg-neutral-50 py-16 md:py-32">
 
         <div className="max-w-7xl mx-auto px-6">
 
@@ -166,7 +166,7 @@ export default function InsightsPage() {
       </section>
 
       {/* RESEARCH METRICS */}
-      <section className="bg-white py-32">
+      <section className="bg-white py-16 md:py-32">
 
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-16 text-center">
 
@@ -202,7 +202,7 @@ export default function InsightsPage() {
       </section>
 
       {/* ARTICLES & PUBLICATIONS */}
-      <section className="bg-neutral-100 py-32">
+      <section className="bg-neutral-100 py-16 md:py-32">
 
         <div className="max-w-7xl mx-auto px-6">
 
@@ -283,7 +283,7 @@ export default function InsightsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#050b12] text-white py-32">
+      <section className="bg-[#050b12] text-white py-16 md:py-32">
 
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 

@@ -52,14 +52,14 @@ export default function ServicesPage() {
     <main className="bg-[#050b12] text-white">
 
       {/* HERO SECTION */}
-      <section className="relative pt-60 pb-40 px-6 border-b border-white/10">
+      <section className="relative pt-32 pb-20 md:pt-60 md:pb-40 px-6 border-b border-white/10">
         <div className="max-w-6xl mx-auto text-center">
 
           <span className="block text-xs tracking-[0.35em] uppercase text-red-500 mb-8">
             Services
           </span>
 
-          <h1 className="text-5xl md:text-6xl font-semibold mb-10 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 md:mb-10 leading-tight">
             Strategic Intellectual Property Advisory
           </h1>
 

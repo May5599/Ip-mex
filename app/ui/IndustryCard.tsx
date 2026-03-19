@@ -156,16 +156,18 @@
 
 "use client"
 
+import { useState } from "react"
 import { Industry } from "@/app/lib/industries"
 
 type Props = {
-industry: Industry
-open: boolean
-onToggle: () => void
+  industry: Industry
 }
 
-export default function IndustryCard({ industry, open, onToggle }: Props) {
-return (
+export default function IndustryCard({ industry }: Props) {
+  const [open, setOpen] = useState(false)
+  const onToggle = () => setOpen(prev => !prev)
+
+  return (
 
 <div
   className="

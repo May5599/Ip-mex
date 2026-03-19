@@ -1,6 +1,6 @@
 export default function IndustryResearch() {
   return (
-    <section className="py-32 bg-[#0b131d] text-white">
+    <section className="py-16 md:py-32 bg-[#0b131d] text-white">
 
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-16">
 

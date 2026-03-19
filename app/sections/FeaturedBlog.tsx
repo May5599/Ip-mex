@@ -6,14 +6,14 @@ export default function BlogPreview() {
   const recentInsights = INSIGHTS.slice(1, 4)
 
   return (
-    <section className="relative py-44 bg-[#0b1220] text-white overflow-hidden">
+    <section className="relative py-16 md:py-44 bg-[#0b1220] text-white overflow-hidden">
       {/* subtle texture */}
       <div className="absolute inset-0 opacity-[0.12] bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.35)_1px,transparent_0)] [background-size:36px_36px]" />
       <div className="absolute inset-0 bg-gradient-to-b from-[#0b1220] via-[#0b1220]/90 to-[#05080f]" />
 {/* subtle grid pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.07] bg-[linear-gradient(to_right,rgba(255,255,255,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.15)_1px,transparent_1px)] [background-size:48px_48px]" />
       <div className="relative max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-12 gap-24 items-start">
+        <div className="grid lg:grid-cols-12 gap-12 md:gap-24 items-start">
           {/* Featured */}
           <div className="lg:col-span-6">
             <span className="block text-xs tracking-[0.3em] uppercase text-red-500 mb-8">
@@ -29,7 +29,7 @@ export default function BlogPreview() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
             </div>
 
-            <h2 className="text-4xl leading-tight font-semibold max-w-lg">
+            <h2 className="text-2xl md:text-4xl leading-tight font-semibold max-w-lg">
               {featuredInsight.title}
             </h2>
 
@@ -59,7 +59,7 @@ export default function BlogPreview() {
             {recentInsights.map(insight => (
               <div
                 key={insight.id}
-                className="group grid grid-cols-[140px_1fr] gap-8 items-start border-t border-white/10 pt-8"
+                className="group grid grid-cols-[90px_1fr] sm:grid-cols-[140px_1fr] gap-5 sm:gap-8 items-start border-t border-white/10 pt-8"
               >
                 <div className="relative aspect-[1/1] overflow-hidden">
                   <img
