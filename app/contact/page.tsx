@@ -1,10 +1,10 @@
 export const metadata = {
-  title: "Contact IP-MEX | Canadian IP Law Firm — Patents, Trademarks & IP Strategy",
+  title: "Contact IP-MEX | IP Lawyers & Patent Agents | Kanata, Ontario",
   description:
-    "Contact IP-MEX Inc. to speak with our IP lawyers and registered patent agents about patents, trademarks, IP strategy, and virtual in-house counsel services. Based in Kanata, Ontario — serving clients globally.",
+    "Contact IP-MEX Inc. in Kanata, Ontario to speak with our registered IP lawyers and patent agents about patents, trademarks, IP strategy, and virtual in-house counsel services.",
   openGraph: {
     title: "Contact IP-MEX Inc.",
-    description: "Get in touch with our IP lawyers and registered patent agents in Kanata, Ontario.",
+    description: "Contact our registered IP lawyers and patent agents in Kanata, Ontario for patents, trademarks, IP strategy, and virtual counsel services.",
     type: "website"
   }
 }
@@ -26,7 +26,7 @@ export default function ContactPage() {
           </h1>
 
           <p className="text-slate-300 text-xl mt-10 max-w-2xl leading-relaxed">
-            Whether you need to protect a new invention, register a trademark, build an IP program, or get a valuation opinion — our team is ready to help. We serve clients across Canada, the USA, and internationally.
+            Whether you need to protect a new invention, register a trademark, build an IP program, or get a valuation opinion   our team is ready to help. We serve clients across Canada, the USA, and internationally.
           </p>
 
         </div>
@@ -36,7 +36,7 @@ export default function ContactPage() {
       <section className="py-24 md:py-36">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-[1fr_420px] gap-16 items-start">
 
-          {/* LEFT — FORM */}
+          {/* LEFT   FORM */}
           <div>
             <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
               Send a Message
@@ -127,10 +127,10 @@ export default function ContactPage() {
                   className="w-full border border-neutral-300 rounded-lg px-4 py-3 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm bg-white"
                 >
                   <option value="" disabled>Select the primary service you need</option>
-                  <option value="Patents — Drafting & Prosecution">Patents — Drafting & Prosecution</option>
+                  <option value="Patents   Drafting & Prosecution">Patents   Drafting & Prosecution</option>
                   <option value="Patent Strategy & Opinions">Patent Strategy & Opinions</option>
                   <option value="Patent Litigation Support">Patent Litigation Support</option>
-                  <option value="Trademarks — Filing & Prosecution">Trademarks — Filing & Prosecution</option>
+                  <option value="Trademarks   Filing & Prosecution">Trademarks   Filing & Prosecution</option>
                   <option value="Trademark Strategy & Clearance">Trademark Strategy & Clearance</option>
                   <option value="IP Audit & Valuation">IP Audit & Valuation</option>
                   <option value="IP Strategy & Virtual Counsel">IP Strategy & Virtual Counsel</option>
@@ -167,7 +167,7 @@ export default function ContactPage() {
             </form>
           </div>
 
-          {/* RIGHT — INFO */}
+          {/* RIGHT   INFO */}
           <div className="space-y-8">
 
             <div className="bg-neutral-50 rounded-2xl p-8 border border-neutral-200">
@@ -223,12 +223,12 @@ export default function ContactPage() {
             <div className="bg-[#0b1220] rounded-2xl p-8 border border-neutral-800">
               <h3 className="text-lg font-bold text-white mb-3">Our Registrations</h3>
               <ul className="space-y-2 text-sm text-slate-400">
-                <li>— Law Society of Ontario (LSO)</li>
-                <li>— College of Patent Agents & Trademark Agents (CPATA)</li>
-                <li>— US Patent & Trademark Office (USPTO)</li>
-                <li>— Canadian Intellectual Property Office (CIPO)</li>
-                <li>— Intellectual Property Institute of Canada (IPIC)</li>
-                <li>— Association of Professional Engineers of Ontario (PEO)</li>
+                <li>  Law Society of Ontario (LSO)</li>
+                <li>  College of Patent Agents & Trademark Agents (CPATA)</li>
+                <li>  US Patent & Trademark Office (USPTO)</li>
+                <li>  Canadian Intellectual Property Office (CIPO)</li>
+                <li>  Intellectual Property Institute of Canada (IPIC)</li>
+                <li>  Association of Professional Engineers of Ontario (PEO)</li>
               </ul>
             </div>
 

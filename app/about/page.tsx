@@ -1,10 +1,10 @@
 export const metadata = {
-  title: "About IP-MEX | Canadian IP Law Firm — Patent Agents & IP Lawyers",
+  title: "About IP-MEX | Canadian IP Law Firm | Patent Agents & IP Lawyers",
   description:
-    "IP-MEX Inc. is a Canadian intellectual property law firm. Our team includes IP lawyers called to the Bar, registered patent agents (CPATA/USPTO), and trademark agents with 15–30 years of experience.",
+    "IP-MEX is a Canadian IP law firm with IP lawyers (LSO), registered patent and trademark agents (CPATA/USPTO) holding PhDs and 20+ years of experience in Canada and the USA.",
   openGraph: {
     title: "About IP-MEX | IP Law Firm",
-    description: "IP lawyers, registered patent agents, and trademark agents serving Canada, the USA, and globally.",
+    description: "IP-MEX is a Canadian IP law firm with IP lawyers (LSO), registered patent and trademark agents (CPATA/USPTO) holding PhDs and 20+ years of experience.",
     type: "website"
   }
 }
@@ -52,7 +52,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-neutral-600 text-lg leading-relaxed mb-6">
-                We offer the full spectrum of IP legal services—from drafting individual patent applications on an as-needed basis, to establishing and running a fully integrated IP program within a company. This includes IP strategy, patent prosecution, trademark registration, litigation support, IP audits, valuations, and part-time virtual in-house counsel at a fraction of the cost of a full-time hire.
+                We offer the full spectrum of IP legal services from drafting individual patent applications on an as-needed basis, to establishing and running a fully integrated IP program within a company. This includes IP strategy, patent prosecution, trademark registration, litigation support, IP audits, valuations, and part-time virtual in-house counsel at a fraction of the cost of a full-time hire.
               </p>
 
               <p className="text-neutral-600 text-lg leading-relaxed">
@@ -74,11 +74,11 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-red-500 mb-2">100+ US Patents</div>
-                    <p className="text-neutral-600">Awarded to our senior technical consultant — one of Canada's most prolific inventors in telecommunications</p>
+                    <p className="text-neutral-600">Awarded to our senior technical consultant   one of Canada's most prolific inventors in telecommunications</p>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-red-500 mb-2">Global</div>
-                    <p className="text-neutral-600">Active clients in Canada, USA, China, Europe — served efficiently via remote counsel</p>
+                    <p className="text-neutral-600">Active clients in Canada, USA, China, Europe   served efficiently via remote counsel</p>
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* TEAM — Dr. Daisy Williams (Featured — has photo) */}
+      {/* TEAM   Dr. Daisy Williams (Featured   has photo) */}
       <section className="bg-neutral-50 py-16 md:py-32 xl:py-40 border-t border-neutral-200">
         <div className="max-w-7xl mx-auto px-6">
 
@@ -101,7 +101,7 @@ export default function AboutPage() {
             IP lawyers, registered agents, and prolific inventors
           </h2>
 
-          {/* Dr. Daisy Williams — Featured, with photo */}
+          {/* Dr. Daisy Williams   Featured, with photo */}
           <div className="bg-white rounded-2xl border border-neutral-200 overflow-hidden mb-10">
             <div className="grid lg:grid-cols-[320px_1fr]">
 
@@ -109,7 +109,7 @@ export default function AboutPage() {
               <div className="relative bg-[#0b1220] flex items-stretch min-h-[380px]">
                 <img
                   src="/images/team/daisy.jpg"
-                  alt="Dr. Daisy Williams — IP Lawyer, Patent Agent, Trademark Agent"
+                  alt="Dr. Daisy Williams   IP Lawyer, Patent Agent, Trademark Agent"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
@@ -132,19 +132,19 @@ export default function AboutPage() {
                   <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-3">Credentials</p>
                     <ul className="text-sm text-neutral-700 space-y-2">
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Called to the Bar (2018), Law Society of Ontario (LSO)</li>
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Registered Patent Agent, CPATA</li>
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Registered Trademark Agent, CPATA</li>
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Registered to practise before the USPTO</li>
+                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Registered Patent Agent, CPATA</li>
+                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Registered Trademark Agent, CPATA</li>
+                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Registered to practise before the USPTO</li>
+                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Called to the Bar (2018), Law Society of Ontario (LSO)</li>
                     </ul>
                   </div>
 
                   <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-3">Education</p>
                     <ul className="text-sm text-neutral-700 space-y-2">
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Ph.D Physics (Optics-Photonics & Computer Modeling), University of Ottawa</li>
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Juris Doctor (2017), University of Ottawa</li>
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> B.Sc Physics-Mathematics</li>
+                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Ph.D Physics (Optics-Photonics & Computer Modeling), University of Ottawa</li>
+                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Juris Doctor (2017), University of Ottawa</li>
+                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> B.Sc Physics-Mathematics</li>
                     </ul>
                   </div>
 
@@ -154,17 +154,20 @@ export default function AboutPage() {
                   Dr. Daisy Williams is an IP Lawyer with the Law Society of Ontario (LSO) and a Registered Patent and Trademark Agent (dual registration) with CPATA, with over 10 years of IP experience. She began her career as a Patent Engineer and Patent Agent Trainee at IP-MEX Inc. (2008–2014), drafting patent applications and preparing office action responses before the USPTO and CIPO for hi-tech inventions.
                 </p>
                 <p className="text-neutral-600 text-sm leading-relaxed mb-4">
-                  In 2017–2018, Daisy practiced IP litigation at Aitken Klee LLP, a patent litigation boutique in Ottawa, participating in <em>Teva Canada Limited v. Janssen Inc., 2018 FC 754</em> and co-authoring a chapter in a textbook on Intellectual Property Litigation. She subsequently served as In-House IP Counsel at a large international corporation, managing the company's global patent and trademark portfolio, conducting invention mining sessions, performing IP clearance, and developing the company's IP strategy.
+                  In 2017–2018, Daisy practiced IP litigation at Aitken Klee LLP, a patent litigation boutique in Ottawa, participating in <em>Teva Canada Limited v. Janssen Inc., 2018 FC 754</em> and co-authoring a chapter in a textbook on Intellectual Property Litigation. She subsequently served as In-House IP Counsel at a large international corporation, where she built and managed the company's global patent and trademark portfolio over half a decade — working closely with the Director of Marketing to develop a comprehensive worldwide branding strategy encompassing brand assessment, corporate image, competitive landscape mapping, and company identity. Her responsibilities also included conducting invention mining sessions, performing IP clearance for products and trademarks, patent prosecution, litigation support, IP strategy development, and IP training and outreach.
+                </p>
+                <p className="text-neutral-600 text-sm leading-relaxed mb-4">
+                  Daisy provides IP training and education on a wide range of topics, including the types and scope of IP rights, IP valuation and commercialization, building an IP roadmap, applying for patents and trademarks in Canada and the USA, IP strategy development, navigating the IP landscape, and building a strong IP portfolio. Currently at IP-MEX Inc., she applies the experience gained across private practice, litigation, and in-house counsel to develop multi-faceted IP protection strategies for her clients.
                 </p>
                 <p className="text-neutral-600 text-sm leading-relaxed">
-                  Daisy holds a Ph.D in Physics (Optics-Photonics) from the University of Ottawa's Centre for Research in Photonics — the research group of Canada Research Chair Professor Xiaoyi Bao. She is the author of 5 peer-reviewed publications and inventor of 3 patents in Canada and the USA.
+                  Daisy holds a Ph.D in Physics (Optics-Photonics & Computer Modeling) from the University of Ottawa's Centre for Research in Photonics — the research group of Canada Research Chair Professor Xiaoyi Bao. She is the author of 5 peer-reviewed publications and inventor of 3 patents in Canada and the USA.
                 </p>
 
               </div>
             </div>
           </div>
 
-          {/* Three team members — no photos, elegant monogram layout */}
+          {/* Three team members   no photos, elegant monogram layout */}
           <div className="grid md:grid-cols-3 gap-8">
 
             {/* Dr. Victoria Donnelly */}
@@ -187,18 +190,18 @@ export default function AboutPage() {
                 <div className="mb-6 pb-6 border-b border-neutral-100">
                   <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-3">Credentials</p>
                   <ul className="text-sm text-neutral-700 space-y-1.5">
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Registered Patent Agent, CPATA</li>
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Registered to practice before the USPTO</li>
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Member, Intellectual Property Institute of Canada (IPIC)</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Registered Patent Agent, CPATA</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Registered to practice before the USPTO</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Member, Intellectual Property Institute of Canada (IPIC)</li>
                   </ul>
                 </div>
 
                 <div className="mb-6 pb-6 border-b border-neutral-100">
                   <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-3">Education</p>
                   <ul className="text-sm text-neutral-700 space-y-1.5">
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Ph.D Mathematics & Physics (Computational Physics)</li>
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> M.Sc Physics (Photonics)</li>
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> B.Sc Electronics and Applied Engineering</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Ph.D Mathematics & Physics (Computational Physics)</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> M.Sc Physics (Photonics)</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> B.Sc Electronics and Applied Engineering</li>
                   </ul>
                 </div>
 
@@ -228,9 +231,9 @@ export default function AboutPage() {
                 <div className="mb-6 pb-6 border-b border-neutral-100">
                   <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-3">Education</p>
                   <ul className="text-sm text-neutral-700 space-y-1.5">
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Ph.D Solid State Physics</li>
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> M.Sc Radiophysics and Electronics</li>
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> B.Sc Physics/Math</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Ph.D Solid State Physics</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> M.Sc Radiophysics and Electronics</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> B.Sc Physics/Math</li>
                   </ul>
                 </div>
 
@@ -260,13 +263,13 @@ export default function AboutPage() {
                 <div className="mb-6 pb-6 border-b border-neutral-100">
                   <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-3">Education & Credentials</p>
                   <ul className="text-sm text-neutral-700 space-y-1.5">
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Ph.D Electrical Engineering, McMaster University</li>
-                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5">—</span> Member, Association of Professional Engineers of Ontario (PEO)</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Ph.D Electrical Engineering, McMaster University</li>
+                    <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Member, Association of Professional Engineers of Ontario (PEO)</li>
                   </ul>
                 </div>
 
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  Senior technical patent consultant and prolific inventor. A Nortel Networks veteran with 30+ years in telecommunications research — his work explored advanced electronic switch/router structures and large-scale optical switching. Awarded over 100 US patents. Author of 20+ technical papers. At IP-MEX, Maged conducts patentability and freedom-to-operate searches, prepares patent applications for software and telecom inventions, and renders technical infringement and validity analyses.
+                  Senior technical patent consultant and prolific inventor. A Nortel Networks veteran with 30+ years in telecommunications research   his work explored advanced electronic switch/router structures and large-scale optical switching. Awarded over 100 US patents. Author of 20+ technical papers. At IP-MEX, Maged conducts patentability and freedom-to-operate searches, prepares patent applications for software and telecom inventions, and renders technical infringement and validity analyses.
                 </p>
 
               </div>
@@ -290,7 +293,7 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-neutral-600 text-lg leading-relaxed max-w-3xl mb-16">
-            Every member of the IP-MEX team holds an advanced degree in physics, engineering, or mathematics. This scientific depth means our lawyers and agents communicate with inventors at their level of technical understanding — they understand the invention, not just the paperwork.
+            Every member of the IP-MEX team holds an advanced degree in physics, engineering, or mathematics. This scientific depth means our lawyers and agents communicate with inventors at their level of technical understanding   they understand the invention, not just the paperwork.
           </p>
 
           <div className="grid md:grid-cols-2 gap-10">
@@ -305,7 +308,7 @@ export default function AboutPage() {
             <div className="border border-neutral-200 rounded-xl p-10">
               <h3 className="text-xl font-bold text-neutral-900 mb-4">Dr. Victoria Donnelly</h3>
               <p className="text-neutral-600 text-sm leading-relaxed">
-                Technical degrees in three complementary areas: Ph.D Mathematics & Physics (Computational Physics), M.Sc Optics, and B.Eng Electronics. Over 10 years of academic research experience as a University Professor. Author of 35 scientific publications and holder of 8 patents. Technology areas include Optics/Photonics, Aerospace, Software, Telecommunications, Semiconductors, AI, Biomedical Engineering, Clean Technologies, and Chemical Engineering.
+                Technical degrees in three complementary areas: Ph.D Mathematics & Physics (Computational Physics), M.Sc Physics (Photonics), and B.Sc Electronics and Applied Engineering. Over 10 years of academic research experience as a University Professor. Author of 35 scientific publications and holder of 8 patents. Technology areas include Optics/Photonics, Aerospace, Software, Telecommunications, Semiconductors, AI, Biomedical Engineering, Clean Technologies, and Chemical Engineering.
               </p>
             </div>
 
@@ -428,7 +431,7 @@ export default function AboutPage() {
                 <div className="text-red-500 text-2xl font-bold flex-shrink-0 mt-1">✓</div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Licensed & Registered Counsel</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">Our team includes IP lawyers called to the Bar (LSO), registered patent agents (CPATA), registered trademark agents (CPATA), and counsel registered before the USPTO — providing full legal authority to prosecute and enforce IP rights in Canada and the United States.</p>
+                  <p className="text-neutral-600 text-sm leading-relaxed">Our team includes IP lawyers called to the Bar (LSO), registered patent agents (CPATA), registered trademark agents (CPATA), and counsel registered before the USPTO   providing full legal authority to prosecute and enforce IP rights in Canada and the United States.</p>
                 </div>
               </div>
 
@@ -456,7 +459,7 @@ export default function AboutPage() {
                 <div className="text-red-500 text-2xl font-bold flex-shrink-0 mt-1">✓</div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Cost-Effective Legal Services</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">Our fees are lower than average Canadian law firm rates. The part-time virtual in-house counsel model allows startups and SMEs to build full IP programs at a fraction of the cost of a full-time IP hire — without sacrificing depth or quality.</p>
+                  <p className="text-neutral-600 text-sm leading-relaxed">Our fees are lower than average Canadian law firm rates. The part-time virtual in-house counsel model allows startups and SMEs to build full IP programs at a fraction of the cost of a full-time IP hire   without sacrificing depth or quality.</p>
                 </div>
               </div>
 
@@ -464,7 +467,7 @@ export default function AboutPage() {
                 <div className="text-red-500 text-2xl font-bold flex-shrink-0 mt-1">✓</div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Global Client Base</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">We serve clients in Canada, the USA, China, and Europe. Distance is not a barrier — our team conducts technical patent interviews efficiently via Zoom, and our deep subject-matter expertise means we get up to speed quickly on any technology.</p>
+                  <p className="text-neutral-600 text-sm leading-relaxed">We serve clients in Canada, the USA, China, and Europe. Distance is not a barrier   our team conducts technical patent interviews efficiently via Zoom, and our deep subject-matter expertise means we get up to speed quickly on any technology.</p>
                 </div>
               </div>
 

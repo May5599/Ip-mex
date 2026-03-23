@@ -2,12 +2,12 @@ import { INSIGHTS } from "@/app/lib/insights"
 import Link from "next/link"
 
 export const metadata = {
-  title: "Insights | IP-MEX",
+  title: "IP & Patent Insights | IP-MEX | Strategy & Commentary",
   description:
-    "Research, publications, and commentary on intellectual property strategy and technology innovation.",
+    "Expert commentary and analysis on patent strategy, trademark law, IP valuation, and technology innovation from IP-MEX — Canada's IP law firm.",
   openGraph: {
-    title: "IP-MEX Insights",
-    description: "Research and analysis on intellectual property strategy and innovation",
+    title: "IP & Patent Insights | IP-MEX",
+    description: "Expert commentary and analysis on patent strategy, trademark law, IP valuation, and technology innovation from IP-MEX — Canada's IP law firm.",
     type: "website"
   }
 }

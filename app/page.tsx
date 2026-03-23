@@ -8,7 +8,12 @@ import BlogPreview from "./sections/FeaturedBlog";
 export const metadata = {
   title: "IP-MEX | Patent & Trademark Law Firm Canada",
   description:
-    "IP-MEX Inc. is a Canadian intellectual property law firm specializing in patent strategy, trademark protection, and IP litigation support. Serving startup companies, SMEs, and multinational enterprises across North America.",
+    "IP-MEX is a Canadian IP law firm providing patent strategy, trademark registration, and IP counsel to startups, SMEs, and enterprises in Canada, the USA, and globally.",
+  openGraph: {
+    title: "IP-MEX | Canadian IP Law Firm",
+    description: "IP-MEX is a Canadian IP law firm providing patent strategy, trademark registration, and IP counsel to startups, SMEs, and enterprises in Canada, the USA, and globally.",
+    type: "website",
+  },
 };
 
 export default function Home() {

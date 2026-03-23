@@ -43,8 +43,13 @@ import Image from "next/image";
 import { SERVICES } from "@/app/lib/services";
 
 export const metadata = {
-  title: "Services | IP-MEX Law Firm - Patents, Trademarks, IP Strategy",
-  description: "Comprehensive intellectual property legal services including patent strategy, trademark protection, IP litigation support, and part-time virtual counsel.",
+  title: "IP Legal Services | IP-MEX — Patents, Trademarks & IP Strategy",
+  description: "IP-MEX provides patent prosecution, trademark registration, IP strategy, audits, valuations, and virtual in-house counsel to startups and enterprises in Canada and the USA.",
+  openGraph: {
+    title: "IP Legal Services | IP-MEX",
+    description: "IP-MEX provides patent prosecution, trademark registration, IP strategy, audits, valuations, and virtual in-house counsel in Canada and the USA.",
+    type: "website",
+  },
 };
 
 export default function ServicesPage() {
