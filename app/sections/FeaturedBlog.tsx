@@ -1,4 +1,4 @@
-import { INSIGHTS } from "@/app/lib/insights"
+import { getInsightHref, INSIGHTS } from "@/app/lib/insights"
 import Link from "next/link"
 
 export default function BlogPreview() {
@@ -8,10 +8,10 @@ export default function BlogPreview() {
   return (
     <section className="relative py-16 md:py-44 bg-[#0b1220] text-white overflow-hidden">
       {/* subtle texture */}
-      <div className="absolute inset-0 opacity-[0.12] bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.35)_1px,transparent_0)] [background-size:36px_36px]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0b1220] via-[#0b1220]/90 to-[#05080f]" />
+      <div className="absolute inset-0 opacity-[0.12] bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.35)_1px,transparent_0)] bg-size-[36px_36px]" />
+      <div className="absolute inset-0 bg-linear-to-b from-[#0b1220] via-[#0b1220]/90 to-[#05080f]" />
 {/* subtle grid pattern */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.07] bg-[linear-gradient(to_right,rgba(255,255,255,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.15)_1px,transparent_1px)] [background-size:48px_48px]" />
+      <div className="absolute inset-0 pointer-events-none opacity-[0.07] bg-[linear-gradient(to_right,rgba(255,255,255,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.15)_1px,transparent_1px)] bg-size-[48px_48px]" />
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-12 gap-12 md:gap-24 items-start">
           {/* Featured */}
@@ -20,13 +20,13 @@ export default function BlogPreview() {
               Featured Insight
             </span>
 
-            <div className="relative aspect-[4/3] mb-10 overflow-hidden">
+            <div className="relative aspect-4/3 mb-10 overflow-hidden">
               <img
                 src="/insights/featured.jpg"
                 alt={featuredInsight.title}
                 className="absolute inset-0 w-full h-full object-cover opacity-80"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
             </div>
 
             <h2 className="text-2xl md:text-4xl leading-tight font-semibold max-w-lg">
@@ -39,7 +39,9 @@ export default function BlogPreview() {
 
             <div className="mt-10 flex items-center gap-6">
               <Link
-                href={`/insights/${featuredInsight.slug}`}
+                href={getInsightHref(featuredInsight)}
+                target={featuredInsight.externalUrl ? "_blank" : undefined}
+                rel={featuredInsight.externalUrl ? "noreferrer" : undefined}
                 className="text-sm font-medium underline underline-offset-4 hover:text-red-500 transition-colors"
               >
                 Read article
@@ -61,7 +63,7 @@ export default function BlogPreview() {
                 key={insight.id}
                 className="group grid grid-cols-[90px_1fr] sm:grid-cols-[140px_1fr] gap-5 sm:gap-8 items-start border-t border-white/10 pt-8"
               >
-                <div className="relative aspect-[1/1] overflow-hidden">
+                <div className="relative aspect-square overflow-hidden">
                   <img
                     src="/images/blog.jpg"
                     alt=""
@@ -74,7 +76,13 @@ export default function BlogPreview() {
                     {insight.date}
                   </p>
                   <h3 className="text-xl font-medium leading-snug group-hover:text-red-500 transition-colors">
-                    <Link href={`/insights/${insight.slug}`}>{insight.title}</Link>
+                    <Link
+                      href={getInsightHref(insight)}
+                      target={insight.externalUrl ? "_blank" : undefined}
+                      rel={insight.externalUrl ? "noreferrer" : undefined}
+                    >
+                      {insight.title}
+                    </Link>
                   </h3>
                   <p className="mt-2 text-slate-300">
                     {insight.excerpt}

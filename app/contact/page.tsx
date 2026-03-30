@@ -14,18 +14,18 @@ export default function ContactPage() {
     <main className="bg-white min-h-screen">
 
       {/* HERO */}
-      <section className="bg-[#050b12] text-white pt-28 pb-16 md:py-32 lg:py-48">
+      <section className="bg-[#050b12] text-white pt-28 pb-16 md:pt-36 md:pb-24 lg:pt-44 lg:pb-32">
         <div className="max-w-7xl mx-auto px-6">
 
-          <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
+          <span className="eyebrow text-red-500">
             Contact
           </span>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-8 leading-tight max-w-3xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mt-8 leading-tight max-w-3xl">
             Talk to our IP lawyers and registered agents
           </h1>
 
-          <p className="text-slate-300 text-xl mt-10 max-w-2xl leading-relaxed">
+          <p className="text-slate-300 text-base md:text-lg mt-6 md:mt-8 max-w-2xl leading-relaxed">
             Whether you need to protect a new invention, register a trademark, build an IP program, or get a valuation opinion   our team is ready to help. We serve clients across Canada, the USA, and internationally.
           </p>
 
@@ -33,15 +33,15 @@ export default function ContactPage() {
       </section>
 
       {/* FORM + INFO */}
-      <section className="py-24 md:py-36">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-[1fr_420px] gap-16 items-start">
+      <section className="py-16 md:py-24 xl:py-32">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-[minmax(0,1fr)_380px] xl:grid-cols-[minmax(0,1fr)_420px] gap-10 md:gap-16 items-start">
 
           {/* LEFT   FORM */}
           <div>
-            <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
+            <span className="eyebrow text-red-500">
               Send a Message
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mt-6 mb-3">
+            <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900 mt-6 mb-3">
               Tell us about your IP needs
             </h2>
             <p className="text-neutral-500 mb-10">
@@ -70,7 +70,7 @@ export default function ContactPage() {
                     name="name"
                     required
                     placeholder="Dr. Jane Smith"
-                    className="w-full border border-neutral-300 rounded-lg px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm"
+                    className="w-full border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm"
                   />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
                     type="text"
                     name="company"
                     placeholder="Acme Technologies Inc."
-                    className="w-full border border-neutral-300 rounded-lg px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm"
+                    className="w-full border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm"
                   />
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function ContactPage() {
                     name="email"
                     required
                     placeholder="jane@company.com"
-                    className="w-full border border-neutral-300 rounded-lg px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm"
+                    className="w-full border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm"
                   />
                 </div>
                 <div>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     type="tel"
                     name="phone"
                     placeholder="+1 (613) 555-0000"
-                    className="w-full border border-neutral-300 rounded-lg px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm"
+                    className="w-full border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm"
                   />
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function ContactPage() {
                   name="service"
                   required
                   defaultValue=""
-                  className="w-full border border-neutral-300 rounded-lg px-4 py-3 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm bg-white"
+                  className="w-full border border-neutral-300 px-4 py-3 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm bg-white"
                 >
                   <option value="" disabled>Select the primary service you need</option>
                   <option value="Patents   Drafting & Prosecution">Patents   Drafting & Prosecution</option>
@@ -150,13 +150,13 @@ export default function ContactPage() {
                   required
                   rows={5}
                   placeholder="Briefly describe your technology or IP matter. For example: We have developed a novel optical sensor and would like to discuss patent protection in Canada and the USA."
-                  className="w-full border border-neutral-300 rounded-lg px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm resize-none"
+                  className="w-full border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="bg-red-500 hover:bg-red-600 text-white font-semibold px-10 py-4 rounded-lg transition w-full sm:w-auto"
+                className="btn-primary w-full sm:w-auto"
               >
                 Send Enquiry
               </button>
@@ -170,8 +170,8 @@ export default function ContactPage() {
           {/* RIGHT   INFO */}
           <div className="space-y-8">
 
-            <div className="bg-neutral-50 rounded-2xl p-8 border border-neutral-200">
-              <h3 className="text-lg font-bold text-neutral-900 mb-6">Contact Information</h3>
+            <div className="bg-neutral-50 rounded-2xl p-6 md:p-8 border border-neutral-200">
+              <h3 className="text-lg font-semibold text-neutral-900 mb-6">Contact Information</h3>
               <div className="space-y-5 text-sm">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-1">Address</p>
@@ -195,15 +195,15 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="bg-neutral-50 rounded-2xl p-8 border border-neutral-200">
-              <h3 className="text-lg font-bold text-neutral-900 mb-4">Remote Consultations</h3>
+            <div className="bg-neutral-50 rounded-2xl p-6 md:p-8 border border-neutral-200">
+              <h3 className="text-lg font-semibold text-neutral-900 mb-4">Remote Consultations</h3>
               <p className="text-sm text-neutral-600 leading-relaxed">
                 Distance is not an issue. We conduct efficient technical patent interviews and consultations via Zoom with clients across Canada, the USA, Europe, and Asia.
               </p>
             </div>
 
-            <div className="bg-neutral-50 rounded-2xl p-8 border border-neutral-200">
-              <h3 className="text-lg font-bold text-neutral-900 mb-4">What to Expect</h3>
+            <div className="bg-neutral-50 rounded-2xl p-6 md:p-8 border border-neutral-200">
+              <h3 className="text-lg font-semibold text-neutral-900 mb-4">What to Expect</h3>
               <ul className="space-y-3 text-sm text-neutral-600">
                 {[
                   "We review your enquiry and identify the relevant legal area",
@@ -213,15 +213,15 @@ export default function ContactPage() {
                   "Fees are below average Canadian law firm rates"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="text-red-500 font-bold mt-0.5 flex-shrink-0">{i + 1}.</span>
+                    <span className="text-red-500 font-bold mt-0.5">{i + 1}.</span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="bg-[#0b1220] rounded-2xl p-8 border border-neutral-800">
-              <h3 className="text-lg font-bold text-white mb-3">Our Registrations</h3>
+            <div className="bg-[#0b1220] rounded-2xl p-6 md:p-8 border border-neutral-800">
+              <h3 className="text-lg font-semibold text-white mb-3">Our Registrations</h3>
               <ul className="space-y-2 text-sm text-slate-400">
                 <li>  Law Society of Ontario (LSO)</li>
                 <li>  College of Patent Agents & Trademark Agents (CPATA)</li>

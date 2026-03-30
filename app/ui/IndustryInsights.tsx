@@ -25,7 +25,7 @@ return ( <section className="py-16 md:py-40 bg-[#050b12] text-white">
 
       <div
         onClick={() => setOpen(1)}
-        className="group cursor-pointer backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-xl overflow-hidden hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(255,255,255,0.06)] transition duration-300"
+        className="group cursor-pointer backdrop-blur-xl bg-white/4 border border-white/10 rounded-xl overflow-hidden hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(255,255,255,0.06)] transition duration-300"
       >
 
         <img
@@ -33,13 +33,13 @@ return ( <section className="py-16 md:py-40 bg-[#050b12] text-white">
           className="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
         />
 
-        <div className="p-6 flex flex-col min-h-[220px]">
+        <div className="p-6 flex flex-col min-h-55">
 
           <h3 className="text-lg font-medium mb-3">
             Strategy in the AI Era
           </h3>
 
-          <p className="text-slate-400 text-sm flex-grow">
+          <p className="text-slate-400 text-sm grow">
             How intellectual property frameworks are adapting to rapidly evolving.
           </p>
 
@@ -57,7 +57,7 @@ return ( <section className="py-16 md:py-40 bg-[#050b12] text-white">
 
       <div
         onClick={() => setOpen(2)}
-        className="group cursor-pointer backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-xl overflow-hidden hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(255,255,255,0.06)] transition duration-300"
+        className="group cursor-pointer backdrop-blur-xl bg-white/4 border border-white/10 rounded-xl overflow-hidden hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(255,255,255,0.06)] transition duration-300"
       >
 
         <img
@@ -65,13 +65,13 @@ return ( <section className="py-16 md:py-40 bg-[#050b12] text-white">
           className="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
         />
 
-        <div className="p-6 flex flex-col min-h-[220px]">
+        <div className="p-6 flex flex-col min-h-55">
 
           <h3 className="text-lg font-medium mb-3">
             Semiconductor Innovation 
           </h3>
 
-          <p className="text-slate-400 text-sm flex-grow">
+          <p className="text-slate-400 text-sm grow">
             Why semiconductor companies require long-term patent strategy.
           </p>
 
@@ -89,7 +89,7 @@ return ( <section className="py-16 md:py-40 bg-[#050b12] text-white">
 
       <div
         onClick={() => setOpen(3)}
-        className="group cursor-pointer backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-xl overflow-hidden hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(255,255,255,0.06)] transition duration-300"
+        className="group cursor-pointer backdrop-blur-xl bg-white/4 border border-white/10 rounded-xl overflow-hidden hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(255,255,255,0.06)] transition duration-300"
       >
 
         <img
@@ -97,13 +97,13 @@ return ( <section className="py-16 md:py-40 bg-[#050b12] text-white">
           className="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
         />
 
-        <div className="p-6 flex flex-col min-h-[220px]">
+        <div className="p-6 flex flex-col min-h-55">
 
           <h3 className="text-lg font-medium mb-3">
             FinTech and IP Protection
           </h3>
 
-          <p className="text-slate-400 text-sm flex-grow">
+          <p className="text-slate-400 text-sm grow">
             Protecting financial infrastructure platforms operating in complex regulatory environments.
           </p>
 
@@ -121,7 +121,7 @@ return ( <section className="py-16 md:py-40 bg-[#050b12] text-white">
 
       <div
         onClick={() => setOpen(4)}
-        className="group cursor-pointer backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-xl overflow-hidden hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(255,255,255,0.06)] transition duration-300"
+        className="group cursor-pointer backdrop-blur-xl bg-white/4 border border-white/10 rounded-xl overflow-hidden hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(255,255,255,0.06)] transition duration-300"
       >
 
         <img
@@ -129,13 +129,13 @@ return ( <section className="py-16 md:py-40 bg-[#050b12] text-white">
           className="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
         />
 
-        <div className="p-6 flex flex-col min-h-[220px]">
+        <div className="p-6 flex flex-col min-h-55">
 
           <h3 className="text-lg font-medium mb-3">
             Biotech Patent Landscapes
           </h3>
 
-          <p className="text-slate-400 text-sm flex-grow">
+          <p className="text-slate-400 text-sm grow">
             Understanding global patent competition across rapidly advancing biotech platforms.
           </p>
 

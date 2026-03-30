@@ -165,131 +165,82 @@ type Props = {
 
 export default function IndustryCard({ industry }: Props) {
   const [open, setOpen] = useState(false)
-  const onToggle = () => setOpen(prev => !prev)
 
   return (
+    <article className="group overflow-hidden rounded-3xl border border-neutral-200 bg-white transition duration-500 hover:-translate-y-1 hover:border-neutral-900 hover:shadow-[0_24px_70px_rgba(15,23,42,0.12)]">
+      <button
+        type="button"
+        onClick={() => setOpen(prev => !prev)}
+        className="block w-full text-left"
+      >
+        <div className="relative h-44 sm:h-52 overflow-hidden">
+          <img
+            src={industry.image}
+            alt={industry.name}
+            className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/15 to-transparent" />
+          <div className="absolute left-6 bottom-5 right-6">
+            <p className="text-[11px] uppercase tracking-[0.3em] text-red-300 mb-3">
+              Industry Focus
+            </p>
+            <h3 className="text-xl font-semibold text-white leading-tight">
+              {industry.name}
+            </h3>
+          </div>
+        </div>
 
-<div
-  className="
-group
-rounded-xl
-overflow-hidden
-border border-white/10
-bg-white/[0.03]
-backdrop-blur-xl
-transition
-duration-500
-hover:bg-white/[0.06]
-hover:shadow-[0_30px_80px_rgba(0,0,0,0.45)]
-hover:-translate-y-1
-"
-  
->
-  
+        <div className="px-6 sm:px-7 pt-6 pb-7">
+          <p className="text-sm text-neutral-600 leading-relaxed min-h-18">
+            {industry.description}
+          </p>
 
-  {/* IMAGE HEADER */}
+          <div className="mt-6 flex items-center justify-between border-t border-neutral-200 pt-4">
+            <span className="text-xs uppercase tracking-[0.25em] text-red-600">
+              Explore Sector
+            </span>
+            <span className={`text-sm text-neutral-500 transition-transform ${open ? "rotate-45" : ""}`}>
+              +
+            </span>
+          </div>
+        </div>
+      </button>
 
-<div
-  onClick={onToggle}
-  className="relative h-44 sm:h-48 overflow-hidden cursor-pointer"
->
+      <div className={`overflow-hidden transition-all duration-500 ${open ? "max-h-140 opacity-100" : "max-h-0 opacity-0"}`}>
+        <div className="border-t border-neutral-200 bg-neutral-50 px-6 sm:px-7 py-6">
+          <div className="grid gap-8 text-sm lg:grid-cols-2">
+            <div>
+              <h4 className="text-xs tracking-[0.2em] uppercase text-neutral-400 mb-4">
+                Innovation Areas
+              </h4>
 
-  <img
-    src={industry.image}
-    alt={industry.name}
-    className="
-      w-full
-      h-full
-      object-cover
-      transition
-      duration-700
-      group-hover:scale-110
-    "
-  />
+              <ul className="space-y-3 text-neutral-700">
+                {industry.highlights.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-0.75 h-1.5 w-1.5 shrink-0 rounded-full bg-red-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-  {/* cinematic gradient */}
-  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+            <div>
+              <h4 className="text-xs tracking-[0.2em] uppercase text-neutral-400 mb-4">
+                Strategic Challenges
+              </h4>
 
-  {/* industry title on image */}
-  <div className="absolute bottom-4 left-6 text-sm tracking-wide text-white/90">
-    {industry.name}
-  </div>
-
-</div>
-
-
-  {/* CARD CONTENT */}
-
- <div
-  onClick={onToggle}
-  className="px-6 sm:px-8 pt-6 pb-8 cursor-pointer"
->
-
-  <p className="text-sm text-slate-300 leading-relaxed">
-    {industry.description}
-  </p>
-
-  <div className="mt-6 flex items-center text-xs tracking-widest text-red-500">
-    Explore
-  </div>
-
-</div>
-
-
-
-  {/* EXPANDED PANEL */}
-
-  <div
-    className={`
-    overflow-hidden
-    transition-all
-    duration-500
-    ${open ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}
-    `}
-  >
-
-   <div className="px-6 sm:px-8 pb-8 pt-6 border-t border-white/10">
-
-  <div className="grid md:grid-cols-2 gap-10 text-sm">
-
-    <div>
-      <h4 className="text-xs tracking-[0.2em] uppercase text-slate-400 mb-4">
-        Innovation Areas
-      </h4>
-
-      <ul className="space-y-3 text-slate-300">
-        {industry.highlights.map((item) => (
-          <li key={item} className="flex gap-3">
-            <span className="text-red-500 mt-[3px]">•</span>
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-
-    <div>
-      <h4 className="text-xs tracking-[0.2em] uppercase text-slate-400 mb-4">
-        Strategic Challenges
-      </h4>
-
-      <ul className="space-y-3 text-slate-300">
-        {industry.challenges.map((item) => (
-          <li key={item} className="flex gap-3">
-            <span className="text-red-500 mt-[3px]">•</span>
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-
-  </div>
-
-</div>
-
-  </div>
-
-</div>
-
-
-)
+              <ul className="space-y-3 text-neutral-700">
+                {industry.challenges.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-0.75 h-1.5 w-1.5 shrink-0 rounded-full bg-red-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  )
 }

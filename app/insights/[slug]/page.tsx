@@ -1,5 +1,5 @@
-import { INSIGHTS } from "@/app/lib/insights"
-import { notFound } from "next/navigation"
+import { getInsightHref, INSIGHTS } from "@/app/lib/insights"
+import { notFound, redirect } from "next/navigation"
 import Link from "next/link"
 import { Metadata } from "next"
 
@@ -64,6 +64,10 @@ export default async function InsightPage({ params }: PageProps) {
     notFound()
   }
 
+  if (insight.externalUrl) {
+    redirect(insight.externalUrl)
+  }
+
   const readingTime = calculateReadingTime(insight.content)
   const toc = generateTableOfContents(insight.content)
   const relatedInsights = INSIGHTS.filter(
@@ -114,7 +118,7 @@ export default async function InsightPage({ params }: PageProps) {
       {/* FEATURED IMAGE */}
       <section className="bg-white py-12 md:py-16 border-b border-neutral-200">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="relative overflow-hidden rounded-xl shadow-lg aspect-[16/9]">
+          <div className="relative overflow-hidden rounded-xl shadow-lg aspect-video">
             <img
               src={insight.image}
               alt={insight.title}
@@ -142,7 +146,7 @@ export default async function InsightPage({ params }: PageProps) {
                   About the Author
                 </h3>
                 <p className="text-neutral-600">
-                  {insight.author} provides strategic intellectual property advisory services across North America, specializing in patent strategy, trademark protection, and IP innovation policy.
+                  {insight.author} provides strategic intellectual property legal services across Canada and the USA, specializing in patent strategy, trademark protection, and IP innovation policy.
                 </p>
               </div>
             </div>
@@ -184,7 +188,9 @@ export default async function InsightPage({ params }: PageProps) {
                   {relatedInsights.map(related => (
                     <Link
                       key={related.id}
-                      href={`/insights/${related.slug}`}
+                      href={getInsightHref(related)}
+                      target={related.externalUrl ? "_blank" : undefined}
+                      rel={related.externalUrl ? "noreferrer" : undefined}
                       className="group block hover:opacity-75 transition"
                     >
                       <p className="text-xs uppercase tracking-widest text-red-500 font-medium mb-2">

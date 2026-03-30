@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "IP-MEX | Canadian Patent & Trademark Law Firm",
-  description: "IP-MEX Inc. is a Canadian IP law firm in Kanata, Ontario. Registered patent agents, trademark agents, and IP lawyers providing patent strategy, trademark registration, and IP counsel across Canada and the USA.",
+  title: "IP-MEX | Intellectual Property Law Firm | Ottawa, Ontario",
+  description: "IP-MEX is an intellectual property law firm in Ottawa, Ontario. Registered patent agents, trademark agents, and IP lawyers providing patent strategy, trademark registration, and IP legal counsel across Canada and the USA.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

@@ -37,7 +37,7 @@ export default function MegaMenu({
           </p>
 
           <p className="mt-8 text-base leading-relaxed text-slate-300">
-            End-to-end intellectual property advisory for innovation-driven
+            End-to-end intellectual property legal services for innovation-driven
             organizations.
           </p>
 

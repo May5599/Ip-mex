@@ -37,7 +37,7 @@ export default function SiteHeader() {
       }`}
       onMouseLeave={() => setMegaOpen(false)}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-black/90 to-black/90 pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/90 to-black/90 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 h-20 md:h-24 flex items-center justify-between text-white">
         <Link
@@ -86,23 +86,23 @@ export default function SiteHeader() {
 
         {/* Hamburger Button (mobile only) */}
         <button
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-[6px] z-50 relative"
+          className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 z-50 relative"
           onClick={() => setMobileOpen(prev => !prev)}
           aria-label="Toggle menu"
           aria-expanded={mobileOpen}
         >
           <span
-            className={`block w-6 h-[2px] bg-white transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
               mobileOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
-            className={`block w-6 h-[2px] bg-white transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
               mobileOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`block w-6 h-[2px] bg-white transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
               mobileOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           />

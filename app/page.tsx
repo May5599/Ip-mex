@@ -6,12 +6,12 @@ import ContactPrompt from "./sections/ContactPrompt";
 import BlogPreview from "./sections/FeaturedBlog";
 
 export const metadata = {
-  title: "IP-MEX | Patent & Trademark Law Firm Canada",
+  title: "IP-MEX | Intellectual Property Law Firm | Ottawa, Ontario",
   description:
-    "IP-MEX is a Canadian IP law firm providing patent strategy, trademark registration, and IP counsel to startups, SMEs, and enterprises in Canada, the USA, and globally.",
+    "IP-MEX is an intellectual property law firm in Ottawa, Ontario providing patent strategy, trademark registration, and IP legal counsel to startups, SMEs, and enterprises across Canada and the USA.",
   openGraph: {
-    title: "IP-MEX | Canadian IP Law Firm",
-    description: "IP-MEX is a Canadian IP law firm providing patent strategy, trademark registration, and IP counsel to startups, SMEs, and enterprises in Canada, the USA, and globally.",
+    title: "IP-MEX | IP Law Firm | Ottawa, Ontario",
+    description: "IP-MEX is an intellectual property law firm in Ottawa, Ontario providing patent strategy, trademark registration, and IP legal counsel across Canada and the USA.",
     type: "website",
   },
 };

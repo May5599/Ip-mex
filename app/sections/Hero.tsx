@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-[#050b12] via-[#0b1c2d] to-[#02070d] text-white overflow-hidden pt-32 pb-20 md:pt-56 md:pb-40">
+    <section className="relative bg-linear-to-br from-[#050b12] via-[#0b1c2d] to-[#02070d] text-white overflow-hidden pt-32 pb-20 md:pt-56 md:pb-40">
       <div className="absolute inset-0">
         <Image
           src="/images/main1.jpg"
@@ -12,20 +12,20 @@ export default function Hero() {
           className="object-cover opacity-55"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/40" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/85 via-black/60 to-black/40" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-24 items-center">
         <div>
           <div className="flex items-center gap-4">
             <span className="text-xs tracking-[0.25em] uppercase text-red-500">
-              Intellectual Property Advisory
+              Intellectual Property Law Firm
             </span>
             <span className="h-px w-16 bg-red-500/70" />
           </div>
 
           <h1 className="mt-6 md:mt-10 text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.02]">
-            Strategic IP Guidance
+            Strategic IP Legal Services
             <br />
             for Innovation-Led
             <br />
@@ -33,8 +33,10 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 max-w-md text-lg text-slate-300">
-            IP-MEX advises technology-driven companies on protecting, enforcing,
-            and maximizing the value of their intellectual property.
+            IP-MEX is a Canadian IP law firm in Ottawa, Ontario representing
+            technology-driven companies in protecting, enforcing, and
+            maximizing the value of their intellectual property across
+            Canada and the USA.
           </p>
 
           <div className="mt-8 md:mt-12 flex flex-wrap items-center gap-5 md:gap-8">

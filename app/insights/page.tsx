@@ -1,4 +1,4 @@
-import { INSIGHTS } from "@/app/lib/insights"
+import { getInsightHref, INSIGHTS } from "@/app/lib/insights"
 import Link from "next/link"
 
 export const metadata = {
@@ -17,52 +17,69 @@ export default function InsightsPage() {
     <main className="bg-neutral-50 min-h-screen overflow-hidden">
 
       {/* HERO */}
-      <section className="bg-[#050b12] text-white pt-24 pb-16 md:pt-48 md:pb-40 overflow-hidden">
+      <section className="relative overflow-hidden bg-[#050b12] text-white pt-24 pb-16 md:pt-40 md:pb-28">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(220,38,38,0.16),transparent_34%)]" />
 
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-
-          {/* LEFT CONTENT */}
+        <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)] gap-12 lg:gap-16 items-center">
           <div>
-
             <span className="text-xs tracking-[0.35em] uppercase text-red-500">
               Insights
             </span>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold mt-8 leading-tight">
-              Research, publications, and commentary on
-              intellectual property strategy and
-              technology innovation
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mt-6 leading-tight max-w-3xl">
+              Practical IP insights for companies building, protecting, and scaling innovation.
             </h1>
 
-            <p className="text-slate-300 mt-10 max-w-xl text-lg">
-              IP-MEX publishes research and analysis on global patent landscapes,
-              innovation strategy, and emerging technology sectors across Canada
-              and the United States.
+            <p className="text-slate-300 mt-6 max-w-2xl text-base sm:text-lg leading-relaxed">
+              Articles and commentary on patents, trademarks, disputes, and innovation strategy across Canada and the USA.
             </p>
-
           </div>
 
-          {/* FLOATING IMAGE */}
-          <div className="relative flex justify-center lg:justify-end">
+          <div className="relative">
+            <div className="absolute -inset-4 rounded-4xl bg-red-500/10 blur-3xl" />
 
-            {/* glow background */}
-            <div className="absolute w-[420px] h-[420px] bg-red-500/10 blur-[120px] rounded-full"></div>
+            <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl">
+              <div className="relative aspect-16/10 overflow-hidden border-b border-white/10">
+                <img
+                  src={INSIGHTS[0].image}
+                  alt={INSIGHTS[0].title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-[#050b12] via-[#050b12]/35 to-transparent" />
+                <div className="absolute left-6 bottom-6 right-6">
+                  <p className="text-[11px] uppercase tracking-[0.3em] text-red-400 mb-3">
+                    ADR Article Series
+                  </p>
+                  <h2 className="text-xl sm:text-2xl font-semibold leading-tight max-w-md">
+                    {INSIGHTS[0].title}
+                  </h2>
+                </div>
+              </div>
 
-            <img
-              src="/hero1.png"
-              className="
-              relative
-              w-[240px] sm:w-[320px]
-              lg:w-[420px]
-              drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)]
-              floating-image
-              "
-            />
-
+              <div className="p-6 sm:p-7 space-y-4">
+                {INSIGHTS.map((article) => (
+                  <Link
+                    key={article.id}
+                    href={getInsightHref(article)}
+                    target={article.externalUrl ? "_blank" : undefined}
+                    rel={article.externalUrl ? "noreferrer" : undefined}
+                    className="flex items-start justify-between gap-4 border-b border-white/10 pb-4 last:border-b-0 last:pb-0 hover:text-red-400 transition-colors"
+                  >
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.25em] text-slate-400 mb-2">
+                        {article.date}
+                      </p>
+                      <p className="text-sm sm:text-base leading-relaxed text-white/90">
+                        {article.title}
+                      </p>
+                    </div>
+                    <span className="text-red-400 text-sm shrink-0 mt-1">Read</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
-
         </div>
-
       </section>
 
       {/* FEATURED INSIGHT */}
@@ -70,7 +87,7 @@ export default function InsightsPage() {
 
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
 
-          <div className="relative rounded-xl overflow-hidden shadow-xl aspect-[4/3]">
+          <div className="relative rounded-xl overflow-hidden shadow-xl aspect-4/3">
 
             <img
               src={INSIGHTS[0].image}
@@ -95,10 +112,12 @@ export default function InsightsPage() {
             </p>
 
             <Link
-              href={`/insights/${INSIGHTS[0].slug}`}
+              href={getInsightHref(INSIGHTS[0])}
+              target={INSIGHTS[0].externalUrl ? "_blank" : undefined}
+              rel={INSIGHTS[0].externalUrl ? "noreferrer" : undefined}
               className="text-red-500 font-medium hover:text-black transition"
             >
-              Read Full Analysis →
+              Read Full Article →
             </Link>
 
           </div>
@@ -121,11 +140,13 @@ export default function InsightsPage() {
             {INSIGHTS.map(article=>(
               <Link
                 key={article.id}
-                href={`/insights/${article.slug}`}
+                href={getInsightHref(article)}
+                target={article.externalUrl ? "_blank" : undefined}
+                rel={article.externalUrl ? "noreferrer" : undefined}
                 className="group bg-white border border-neutral-200 rounded-xl overflow-hidden hover:shadow-xl transition flex flex-col"
               >
 
-                <div className="relative overflow-hidden aspect-[16/9]">
+                <div className="relative overflow-hidden aspect-video">
                   <img
                     src={article.image}
                     alt={article.title}
@@ -232,11 +253,13 @@ export default function InsightsPage() {
 
               <Link
                 key={article.id}
-                href={`/insights/${article.slug}`}
+                href={getInsightHref(article)}
+                target={article.externalUrl ? "_blank" : undefined}
+                rel={article.externalUrl ? "noreferrer" : undefined}
                 className="grid md:grid-cols-[80px_1fr_auto] gap-6 py-10 items-center group hover:opacity-75 transition"
               >
 
-                <div className="hidden md:block rounded-lg overflow-hidden aspect-square flex-shrink-0">
+                <div className="hidden md:block rounded-lg overflow-hidden aspect-square shrink-0">
                   <img
                     src={article.image}
                     alt={article.title}

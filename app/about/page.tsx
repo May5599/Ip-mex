@@ -14,71 +14,67 @@ export default function AboutPage() {
     <main className="bg-white min-h-screen">
 
       {/* HERO */}
-      <section className="bg-[#050b12] text-white pt-28 pb-16 md:py-32 lg:py-48">
+      <section className="bg-[#050b12] text-white pt-28 pb-16 md:pt-36 md:pb-24 lg:pt-44 lg:pb-32">
         <div className="max-w-7xl mx-auto px-6">
 
-          <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
+          <span className="eyebrow text-red-500">
             About IP-MEX
           </span>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-8 leading-tight max-w-4xl">
-            A Canadian Intellectual Property Law Firm
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mt-8 leading-tight max-w-4xl">
+            Technical IP counsel for companies building and protecting innovation
           </h1>
 
-          <p className="text-slate-300 text-base md:text-xl mt-6 md:mt-10 max-w-2xl leading-relaxed">
-            IP-MEX Inc. is an intellectual property law firm based in Kanata, Ontario. Our team of IP lawyers, registered patent agents, and registered trademark agents provides comprehensive IP legal services to clients across Canada, the United States, and internationally.
+          <p className="text-slate-300 text-base md:text-lg mt-6 md:mt-8 max-w-2xl leading-relaxed">
+            IP-MEX is an intellectual property law firm in Ottawa, Ontario. We advise clients across Canada and the USA on patents, trademarks, IP strategy, disputes, and long-term portfolio development.
           </p>
 
         </div>
       </section>
 
       {/* FIRM OVERVIEW */}
-      <section className="py-16 md:py-32 xl:py-40">
+      <section className="py-16 md:py-24 xl:py-32">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16 md:mb-24">
 
             <div>
-              <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
+              <span className="eyebrow text-red-500">
                 The Firm
               </span>
 
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mt-6 mb-8">
-                IP law practice built on deep technical expertise
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-neutral-900 mt-6 mb-8">
+                A law firm built on technical depth
               </h2>
 
               <p className="text-neutral-600 text-lg leading-relaxed mb-6">
-                IP-MEX Inc. is an intellectual property law firm providing patent, trademark, and IP strategy legal services to clients throughout Canada, the United States, and globally. Our lawyers and registered agents are themselves prolific inventors and scientists, with advanced academic degrees and decades of practical industry experience.
+                IP-MEX combines legal credentials with advanced scientific and engineering backgrounds. Our lawyers, patent agents, trademark agents, and technical consultants work with inventors, founders, in-house teams, and investors on complex intellectual property matters.
               </p>
 
               <p className="text-neutral-600 text-lg leading-relaxed mb-6">
-                We offer the full spectrum of IP legal services from drafting individual patent applications on an as-needed basis, to establishing and running a fully integrated IP program within a company. This includes IP strategy, patent prosecution, trademark registration, litigation support, IP audits, valuations, and part-time virtual in-house counsel at a fraction of the cost of a full-time hire.
-              </p>
-
-              <p className="text-neutral-600 text-lg leading-relaxed">
-                Our fees are lower than average fees of Canadian law firms, and the quality is incomparably higher. We work closely with the venture capital community to help build solid IP programs for portfolio companies. References are available upon request.
+                Our work ranges from patent drafting and trademark prosecution to IP strategy, valuation, due diligence, litigation support, and part-time virtual in-house counsel. The focus is practical: build defensible rights, reduce avoidable risk, and align IP with business growth.
               </p>
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-blue-500/10 rounded-2xl blur-3xl"></div>
-              <div className="relative bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-2xl p-12 border border-neutral-200">
-                <div className="space-y-8">
+              <div className="absolute inset-0 bg-linear-to-br from-red-500/10 to-blue-500/10 rounded-2xl blur-3xl"></div>
+              <div className="relative bg-linear-to-br from-neutral-50 to-neutral-100 rounded-2xl p-8 md:p-12 border border-neutral-200">
+                <div className="grid sm:grid-cols-2 gap-8">
                   <div>
                     <div className="text-3xl font-bold text-red-500 mb-2">25+ Years</div>
                     <p className="text-neutral-600">Founder IP management experience at Nortel Networks, Alcatel-Lucent, and global enterprises</p>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-red-500 mb-2">300+</div>
-                    <p className="text-neutral-600">Patent applications filed personally by our lead patent agent across all major technology sectors</p>
+                    <p className="text-neutral-600">Patent applications filed personally across major technology sectors</p>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-red-500 mb-2">100+ US Patents</div>
-                    <p className="text-neutral-600">Awarded to our senior technical consultant   one of Canada's most prolific inventors in telecommunications</p>
+                    <p className="text-neutral-600">Awarded to our senior technical consultant in telecommunications</p>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-red-500 mb-2">Global</div>
-                    <p className="text-neutral-600">Active clients in Canada, USA, China, Europe   served efficiently via remote counsel</p>
+                    <p className="text-neutral-600">Clients across Canada, the USA, Europe, and beyond</p>
                   </div>
                 </div>
               </div>
@@ -90,14 +86,14 @@ export default function AboutPage() {
       </section>
 
       {/* TEAM   Dr. Daisy Williams (Featured   has photo) */}
-      <section className="bg-neutral-50 py-16 md:py-32 xl:py-40 border-t border-neutral-200">
+      <section className="bg-neutral-50 py-16 md:py-24 xl:py-32 border-t border-neutral-200">
         <div className="max-w-7xl mx-auto px-6">
 
-          <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
+          <span className="eyebrow text-red-500">
             Our Team
           </span>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mt-6 mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-neutral-900 mt-6 mb-12 md:mb-16">
             IP lawyers, registered agents, and prolific inventors
           </h2>
 
@@ -106,7 +102,7 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-[320px_1fr]">
 
               {/* Photo column */}
-              <div className="relative bg-[#0b1220] flex items-stretch min-h-[380px]">
+              <div className="relative bg-[#0b1220] flex items-stretch min-h-95">
                 <img
                   src="/images/team/daisy.jpg"
                   alt="Dr. Daisy Williams   IP Lawyer, Patent Agent, Trademark Agent"
@@ -115,10 +111,10 @@ export default function AboutPage() {
               </div>
 
               {/* Bio column */}
-              <div className="p-10 lg:p-14">
+              <div className="p-8 md:p-10 lg:p-12">
 
                 <div className="mb-6">
-                  <h3 className="text-3xl font-bold text-neutral-900">
+                  <h3 className="text-3xl font-semibold text-neutral-900">
                     Dr. Daisy Williams
                   </h3>
                   <p className="text-red-500 font-semibold mt-2 text-lg">
@@ -151,35 +147,44 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-neutral-600 text-sm leading-relaxed mb-4">
-                  Dr. Daisy Williams is an IP Lawyer with the Law Society of Ontario (LSO) and a Registered Patent and Trademark Agent (dual registration) with CPATA, with over 10 years of IP experience. She began her career as a Patent Engineer and Patent Agent Trainee at IP-MEX Inc. (2008–2014), drafting patent applications and preparing office action responses before the USPTO and CIPO for hi-tech inventions.
+                  Dr. Daisy Williams is an IP lawyer with the Law Society of Ontario and a registered patent and trademark agent with CPATA. Her experience spans patent drafting and prosecution, trademark strategy, litigation exposure, in-house portfolio management, and IP training.
                 </p>
-                <p className="text-neutral-600 text-sm leading-relaxed mb-4">
-                  In 2017–2018, Daisy practiced IP litigation at Aitken Klee LLP, a patent litigation boutique in Ottawa, participating in <em>Teva Canada Limited v. Janssen Inc., 2018 FC 754</em> and co-authoring a chapter in a textbook on Intellectual Property Litigation. She subsequently served as In-House IP Counsel at a large international corporation, where she built and managed the company's global patent and trademark portfolio over half a decade — working closely with the Director of Marketing to develop a comprehensive worldwide branding strategy encompassing brand assessment, corporate image, competitive landscape mapping, and company identity. Her responsibilities also included conducting invention mining sessions, performing IP clearance for products and trademarks, patent prosecution, litigation support, IP strategy development, and IP training and outreach.
+                <p className="text-neutral-600 text-sm leading-relaxed mb-6">
+                  Before returning to IP-MEX, Daisy practiced IP litigation in Ottawa and later served as in-house IP counsel for an international company, helping manage global patent and trademark matters. She brings a rare mix of legal, technical, and commercial experience to client strategy.
                 </p>
-                <p className="text-neutral-600 text-sm leading-relaxed mb-4">
-                  Daisy provides IP training and education on a wide range of topics, including the types and scope of IP rights, IP valuation and commercialization, building an IP roadmap, applying for patents and trademarks in Canada and the USA, IP strategy development, navigating the IP landscape, and building a strong IP portfolio. Currently at IP-MEX Inc., she applies the experience gained across private practice, litigation, and in-house counsel to develop multi-faceted IP protection strategies for her clients.
-                </p>
-                <p className="text-neutral-600 text-sm leading-relaxed">
-                  Daisy holds a Ph.D in Physics (Optics-Photonics & Computer Modeling) from the University of Ottawa's Centre for Research in Photonics — the research group of Canada Research Chair Professor Xiaoyi Bao. She is the author of 5 peer-reviewed publications and inventor of 3 patents in Canada and the USA.
-                </p>
+
+                <div className="grid sm:grid-cols-3 gap-4 pt-6 border-t border-neutral-100">
+                  <div>
+                    <p className="text-xs uppercase tracking-widest text-neutral-400 mb-2">Experience</p>
+                    <p className="text-sm text-neutral-700">10+ years in intellectual property</p>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-widest text-neutral-400 mb-2">Publications</p>
+                    <p className="text-sm text-neutral-700">5 peer-reviewed scientific publications</p>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-widest text-neutral-400 mb-2">Inventor</p>
+                    <p className="text-sm text-neutral-700">3 patents in Canada and the USA</p>
+                  </div>
+                </div>
 
               </div>
             </div>
           </div>
 
           {/* Three team members   no photos, elegant monogram layout */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
 
             {/* Dr. Victoria Donnelly */}
             <div className="bg-white rounded-2xl border border-neutral-200 overflow-hidden flex flex-col">
 
               {/* Monogram header */}
               <div className="bg-[#0b1220] px-10 pt-10 pb-8 flex items-end gap-5">
-                <div className="w-16 h-16 rounded-full bg-red-500/10 border-2 border-red-500/30 flex items-center justify-center flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-red-500/10 border-2 border-red-500/30 flex items-center justify-center shrink-0">
                   <span className="text-red-400 text-xl font-bold tracking-tight">VD</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white leading-tight">Dr. Victoria Donnelly</h3>
+                  <h3 className="text-xl font-semibold text-white leading-tight">Dr. Victoria Donnelly</h3>
                   <p className="text-red-400 text-sm font-medium mt-1">Founder · Patent Agent</p>
                   <p className="text-slate-500 text-xs mt-0.5">Ph.D Physics & Math (Computational Physics)</p>
                 </div>
@@ -206,7 +211,7 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  Founder of IP-MEX Inc. with 25+ years of IP management experience. Former Senior Manager of IP at Nortel Networks, Director of IP at Tropic Networks (acquired by Alcatel-Lucent), and Director of IP at MosAid, where she managed 5,000+ patents including portfolios for Nokia and Microsoft. Victoria has personally filed over 300 patent applications, holds 8 patents, and is author of 35 scientific publications.
+                  Founder of IP-MEX with 25+ years of IP management experience, including senior roles at Nortel Networks, Tropic Networks, and MosAid. She has managed large enterprise portfolios, personally filed 300+ patent applications, holds 8 patents, and has authored 35 scientific publications.
                 </p>
 
               </div>
@@ -216,11 +221,11 @@ export default function AboutPage() {
             <div className="bg-white rounded-2xl border border-neutral-200 overflow-hidden flex flex-col">
 
               <div className="bg-[#0b1220] px-10 pt-10 pb-8 flex items-end gap-5">
-                <div className="w-16 h-16 rounded-full bg-red-500/10 border-2 border-red-500/30 flex items-center justify-center flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-red-500/10 border-2 border-red-500/30 flex items-center justify-center shrink-0">
                   <span className="text-red-400 text-xl font-bold tracking-tight">AW</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white leading-tight">Dr. Allan Williams</h3>
+                  <h3 className="text-xl font-semibold text-white leading-tight">Dr. Allan Williams</h3>
                   <p className="text-red-400 text-sm font-medium mt-1">Co-Founder · Technical Consultant</p>
                   <p className="text-slate-500 text-xs mt-0.5">Ph.D Physics (Solid State Physics)</p>
                 </div>
@@ -238,7 +243,7 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  Co-founder of IP-MEX with 20+ years of consulting experience in intellectual property. Oversees patent engineering, IP valuation, competitive intelligence, validity and infringement searches, and design-around services. Author of 25 scientific publications and 10 patents. Proficient in C, PASCAL, FORTRAN, JavaScript, PERL, and modern internet technologies.
+                  Co-founder of IP-MEX with 20+ years of consulting experience in patent engineering, IP valuation, competitive intelligence, validity analysis, infringement review, and design-around work. He is the author of 25 scientific publications and 10 patents.
                 </p>
 
               </div>
@@ -248,11 +253,11 @@ export default function AboutPage() {
             <div className="bg-white rounded-2xl border border-neutral-200 overflow-hidden flex flex-col">
 
               <div className="bg-[#0b1220] px-10 pt-10 pb-8 flex items-end gap-5">
-                <div className="w-16 h-16 rounded-full bg-red-500/10 border-2 border-red-500/30 flex items-center justify-center flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-red-500/10 border-2 border-red-500/30 flex items-center justify-center shrink-0">
                   <span className="text-red-400 text-xl font-bold tracking-tight">MB</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white leading-tight">Dr. Maged Beshai</h3>
+                  <h3 className="text-xl font-semibold text-white leading-tight">Dr. Maged Beshai</h3>
                   <p className="text-red-400 text-sm font-medium mt-1">Senior Patent Consultant</p>
                   <p className="text-slate-500 text-xs mt-0.5">Ph.D Electrical Engineering</p>
                 </div>
@@ -269,7 +274,7 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  Senior technical patent consultant and prolific inventor. A Nortel Networks veteran with 30+ years in telecommunications research   his work explored advanced electronic switch/router structures and large-scale optical switching. Awarded over 100 US patents. Author of 20+ technical papers. At IP-MEX, Maged conducts patentability and freedom-to-operate searches, prepares patent applications for software and telecom inventions, and renders technical infringement and validity analyses.
+                  Senior technical patent consultant and prolific inventor with 30+ years in telecommunications research. He has been awarded more than 100 US patents and supports patentability, freedom-to-operate, drafting, infringement, and validity analysis for software and telecom matters.
                 </p>
 
               </div>
@@ -280,83 +285,30 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SCIENTIFIC BACKGROUND */}
-      <section className="py-16 md:py-32 xl:py-40">
-        <div className="max-w-7xl mx-auto px-6">
-
-          <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
-            Technical Depth
-          </span>
-
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mt-6 mb-8 max-w-3xl">
-            Scientists and engineers who practice IP law
-          </h2>
-
-          <p className="text-neutral-600 text-lg leading-relaxed max-w-3xl mb-16">
-            Every member of the IP-MEX team holds an advanced degree in physics, engineering, or mathematics. This scientific depth means our lawyers and agents communicate with inventors at their level of technical understanding   they understand the invention, not just the paperwork.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-10">
-
-            <div className="border border-neutral-200 rounded-xl p-10">
-              <h3 className="text-xl font-bold text-neutral-900 mb-4">Dr. Daisy Williams</h3>
-              <p className="text-neutral-600 text-sm leading-relaxed">
-                Ph.D in Physics (Optics-Photonics & Computer Modeling) from the Centre for Research in Photonics, University of Ottawa. Doctoral thesis on advanced laser light scattering in optical fibers, developing mathematical algorithms and computer simulations for applications in telecommunications, photonic computing, and fiber-optic sensing. Published in 5 prestigious scientific journals. Inventor of 3 patents. Has worked in international laboratories and clean rooms, bringing an inventor's unique perspective to IP law practice.
-              </p>
-            </div>
-
-            <div className="border border-neutral-200 rounded-xl p-10">
-              <h3 className="text-xl font-bold text-neutral-900 mb-4">Dr. Victoria Donnelly</h3>
-              <p className="text-neutral-600 text-sm leading-relaxed">
-                Technical degrees in three complementary areas: Ph.D Mathematics & Physics (Computational Physics), M.Sc Physics (Photonics), and B.Sc Electronics and Applied Engineering. Over 10 years of academic research experience as a University Professor. Author of 35 scientific publications and holder of 8 patents. Technology areas include Optics/Photonics, Aerospace, Software, Telecommunications, Semiconductors, AI, Biomedical Engineering, Clean Technologies, and Chemical Engineering.
-              </p>
-            </div>
-
-            <div className="border border-neutral-200 rounded-xl p-10">
-              <h3 className="text-xl font-bold text-neutral-900 mb-4">Dr. Allan Williams</h3>
-              <p className="text-neutral-600 text-sm leading-relaxed">
-                Ph.D in Solid State Physics, with 20+ years of applied physics research with emphasis on Solid State Physics, Electronics, Semiconductors, and Optics. Author of 25 scientific publications and inventor of 10 patents. Deep expertise in computational methods and software development, including patent software systems and IP competitive intelligence tools.
-              </p>
-            </div>
-
-            <div className="border border-neutral-200 rounded-xl p-10">
-              <h3 className="text-xl font-bold text-neutral-900 mb-4">Dr. Maged Beshai</h3>
-              <p className="text-neutral-600 text-sm leading-relaxed">
-                Ph.D in Electrical Engineering from McMaster University. Nortel Networks veteran with 30 years in the telecommunications industry. Most recent research explored new structures for advanced electronic switches/routers and fast large-scale optical switching for Universal Network deployment. Author of 20+ technical papers in reputable scientific journals. Awarded over 100 US patents.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
       {/* SERVICES */}
-      <section className="bg-neutral-50 py-16 md:py-32 xl:py-40 border-t border-neutral-200">
+      <section className="bg-neutral-50 py-16 md:py-24 xl:py-32 border-t border-neutral-200">
         <div className="max-w-7xl mx-auto px-6">
 
-          <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
+          <span className="eyebrow text-red-500">
             Legal Services
           </span>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mt-6 mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-neutral-900 mt-6 mb-12 md:mb-16">
             Full-spectrum intellectual property legal services
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
 
-            <div className="bg-white rounded-xl p-10 border border-neutral-200">
-              <h3 className="text-xl font-bold text-neutral-900 mb-6">Patents & Industrial Designs</h3>
+            <div className="bg-white rounded-xl p-8 md:p-10 border border-neutral-200">
+              <h3 className="text-xl font-semibold text-neutral-900 mb-6">Patents & Industrial Designs</h3>
               <ul className="space-y-3 text-neutral-600 text-sm">
                 {[
                   "Patent strategy, opinions & advice",
-                  "IP landscaping & patent searches",
+                  "Patent searches & landscaping",
                   "Drafting, filing & prosecution (CIPO & USPTO)",
                   "Patent litigation support",
                   "Technical validity & infringement opinions",
-                  "IP audit, patent valuation & due diligence",
-                  "IP licensing",
-                  "Industrial design applications"
+                  "IP audit, valuation & due diligence"
                 ].map(item => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="text-red-500 font-bold mt-0.5">•</span>
@@ -366,8 +318,8 @@ export default function AboutPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-10 border border-neutral-200">
-              <h3 className="text-xl font-bold text-neutral-900 mb-6">Trademarks</h3>
+            <div className="bg-white rounded-xl p-8 md:p-10 border border-neutral-200">
+              <h3 className="text-xl font-semibold text-neutral-900 mb-6">Trademarks</h3>
               <ul className="space-y-3 text-neutral-600 text-sm">
                 {[
                   "Branding strategy, opinions & advice",
@@ -375,8 +327,7 @@ export default function AboutPage() {
                   "Preparing, filing & prosecution",
                   "Opposition proceedings",
                   "Trademark litigation support",
-                  "IP audit, trademark valuation & due diligence",
-                  "Worldwide branding strategy"
+                  "IP audit, valuation & due diligence"
                 ].map(item => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="text-red-500 font-bold mt-0.5">•</span>
@@ -386,16 +337,14 @@ export default function AboutPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-10 border border-neutral-200">
-              <h3 className="text-xl font-bold text-neutral-900 mb-6">IP Training & Strategy</h3>
+            <div className="bg-white rounded-xl p-8 md:p-10 border border-neutral-200">
+              <h3 className="text-xl font-semibold text-neutral-900 mb-6">IP Training & Strategy</h3>
               <ul className="space-y-3 text-neutral-600 text-sm">
                 {[
                   "IP awareness & educational seminars",
                   "Industry-specific IP guidance",
                   "Alignment of IP strategy with business goals",
                   "Part-time virtual in-house counsel",
-                  "IP culture building within organizations",
-                  "Patent prosecution highway (PPH) strategy",
                   "IP competitive intelligence"
                 ].map(item => (
                   <li key={item} className="flex items-start gap-3">
@@ -412,42 +361,42 @@ export default function AboutPage() {
       </section>
 
       {/* WHY CHOOSE IP-MEX */}
-      <section className="py-16 md:py-32 xl:py-40">
+      <section className="py-16 md:py-24 xl:py-32">
         <div className="max-w-7xl mx-auto px-6">
 
-          <span className="text-xs tracking-[0.35em] uppercase text-red-500 font-medium">
+          <span className="eyebrow text-red-500">
             Why IP-MEX
           </span>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mt-6 mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-neutral-900 mt-6 mb-12 md:mb-16">
             A law firm that works at the technical level of your inventors
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
 
             <div className="space-y-8">
 
               <div className="flex gap-6">
-                <div className="text-red-500 text-2xl font-bold flex-shrink-0 mt-1">✓</div>
+                <div className="text-red-500 text-2xl font-bold shrink-0 mt-1">✓</div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Licensed & Registered Counsel</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">Our team includes IP lawyers called to the Bar (LSO), registered patent agents (CPATA), registered trademark agents (CPATA), and counsel registered before the USPTO   providing full legal authority to prosecute and enforce IP rights in Canada and the United States.</p>
+                  <p className="text-neutral-600 text-sm leading-relaxed">Our team includes lawyers called to the Bar in Ontario, registered patent agents, registered trademark agents, and professionals registered before the USPTO.</p>
                 </div>
               </div>
 
               <div className="flex gap-6">
-                <div className="text-red-500 text-2xl font-bold flex-shrink-0 mt-1">✓</div>
+                <div className="text-red-500 text-2xl font-bold shrink-0 mt-1">✓</div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Inventor Credibility</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">Our team members are themselves prolific inventors, collectively holding over 130 patents. Being inventors, we understand the innovation process from the inside and can communicate with technical founders at the highest level of scientific understanding.</p>
+                  <p className="text-neutral-600 text-sm leading-relaxed">Our team members are also inventors, with more than 130 patents collectively. That perspective helps us work credibly with technical founders, scientists, and engineering teams.</p>
                 </div>
               </div>
 
               <div className="flex gap-6">
-                <div className="text-red-500 text-2xl font-bold flex-shrink-0 mt-1">✓</div>
+                <div className="text-red-500 text-2xl font-bold shrink-0 mt-1">✓</div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Enterprise IP Experience</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">Our founders built and ran IP programs at Nortel Networks, Alcatel-Lucent, and managed patent portfolios exceeding 5,000 patents. That enterprise-level discipline is applied to every client engagement, regardless of company size.</p>
+                  <p className="text-neutral-600 text-sm leading-relaxed">Our founders built and managed IP programs at Nortel Networks, Alcatel-Lucent, and other major enterprises, including portfolios exceeding 5,000 patents.</p>
                 </div>
               </div>
 
@@ -456,26 +405,26 @@ export default function AboutPage() {
             <div className="space-y-8">
 
               <div className="flex gap-6">
-                <div className="text-red-500 text-2xl font-bold flex-shrink-0 mt-1">✓</div>
+                <div className="text-red-500 text-2xl font-bold shrink-0 mt-1">✓</div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Cost-Effective Legal Services</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">Our fees are lower than average Canadian law firm rates. The part-time virtual in-house counsel model allows startups and SMEs to build full IP programs at a fraction of the cost of a full-time IP hire   without sacrificing depth or quality.</p>
+                  <p className="text-neutral-600 text-sm leading-relaxed">Our part-time virtual in-house counsel model gives startups and SMEs access to meaningful IP support without the cost of a full-time internal hire.</p>
                 </div>
               </div>
 
               <div className="flex gap-6">
-                <div className="text-red-500 text-2xl font-bold flex-shrink-0 mt-1">✓</div>
+                <div className="text-red-500 text-2xl font-bold shrink-0 mt-1">✓</div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Global Client Base</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">We serve clients in Canada, the USA, China, and Europe. Distance is not a barrier   our team conducts technical patent interviews efficiently via Zoom, and our deep subject-matter expertise means we get up to speed quickly on any technology.</p>
+                  <p className="text-neutral-600 text-sm leading-relaxed">We serve clients across Canada, the USA, Europe, and other markets, working efficiently across jurisdictions and remote teams.</p>
                 </div>
               </div>
 
               <div className="flex gap-6">
-                <div className="text-red-500 text-2xl font-bold flex-shrink-0 mt-1">✓</div>
+                <div className="text-red-500 text-2xl font-bold shrink-0 mt-1">✓</div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Venture Capital & Startup Focus</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">We work closely with the Venture Capital community to build solid IP programs for portfolio companies. Strong IP is a critical driver of valuation, and we help startups establish it quickly, correctly, and cost-effectively.</p>
+                  <p className="text-neutral-600 text-sm leading-relaxed">We work with startups, growth companies, and venture-backed teams to build IP programs that support valuation, fundraising, and long-term defensibility.</p>
                 </div>
               </div>
 
@@ -487,10 +436,10 @@ export default function AboutPage() {
       </section>
 
       {/* CONTACT CTA */}
-      <section className="bg-[#050b12] text-white py-16 md:py-32 xl:py-40">
+      <section className="bg-[#050b12] text-white py-16 md:py-24 xl:py-32">
         <div className="max-w-4xl mx-auto px-6 text-center">
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-8">
             Speak with our IP lawyers and agents
           </h2>
 
@@ -501,13 +450,13 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a
               href="/contact"
-              className="bg-red-500 hover:bg-red-600 text-white font-semibold px-10 py-4 rounded-lg transition"
+              className="btn-primary"
             >
               Contact Us
             </a>
             <a
               href="tel:613-831-6003"
-              className="border border-red-500 hover:bg-red-500 text-white font-semibold px-10 py-4 rounded-lg transition"
+              className="btn-secondary border-red-500 text-white hover:bg-red-500"
             >
               Call: 613-831-6003
             </a>

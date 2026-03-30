@@ -1,285 +1,347 @@
-// import Image from "next/image";
-// import type { ServiceItem } from "@/app/lib/services";
-
-// type Props = {
-//   service: ServiceItem;
-// };
-
-// export default function ServiceTemplate({ service }: Props) {
-//   return (
-//     <main className="bg-[#050b12] text-white pt-56 pb-40">
-//       <section className="relative">
-//         <div className="absolute inset-0">
-//           <Image
-//             src={service.heroImage}
-//             alt={service.label}
-//             fill
-//             className="object-cover opacity-70"
-//             priority
-//           />
-//           <div className="absolute inset-0 bg-gradient-to-r from-black/65 to-black/10" />
-//         </div>
-
-//         <div className="relative max-w-7xl mx-auto px-6 py-40">
-//           <span className="block text-xs tracking-[0.3em] uppercase text-red-500 mb-10">
-//             Services
-//           </span>
-
-//           {/* Title */}
-//           <h1 className="text-6xl font-semibold mb-8">
-//             {service.label}
-//           </h1>
-
-//           {/* Description */}
-//           <p className="text-lg text-slate-300 max-w-2xl leading-relaxed">
-//             {service.description}
-//           </p>
-//         </div>
-//       </section>
-//     </main>
-//   );
-// }
-
-
-
 import Image from "next/image";
-import type { ServiceItem } from "@/app/lib/services";
-import { SERVICE_CONTENT } from "@/app/lib/serviceContent";
-import ServiceRotator from "@/app/ui/ServiceRotator";
+import Link from "next/link";
+import { SERVICE_CONTENT, type ServiceContent } from "@/app/lib/serviceContent";
+import { SERVICES, type ServiceItem } from "@/app/lib/services";
 import VerticalSlidingDomains from "@/app/ui/DomainCarousel";
+import ServiceRotator from "@/app/ui/ServiceRotator";
 
-import ContactPrompt from '../sections/ContactPrompt';
-// import { main } from "framer-motion/m";
-
+import ContactPrompt from "../sections/ContactPrompt";
 
 type Props = {
   service: ServiceItem;
 };
 
+function getFallbackContent(service: ServiceItem): ServiceContent {
+  const highlights = service.highlights ?? [];
+
+  return {
+    snapshot: {
+      positioning:
+        "Legal strategy structured around commercially important IP decisions rather than generic portfolio activity.",
+      coverage:
+        "Support tailored to the specific mandate, business stage, and risk profile of the organization.",
+      jurisdiction:
+        "Guidance built for Canadian and U.S. intellectual property matters, with cross-border coordination when needed.",
+    },
+    headings: {
+      overview: "What this service is designed to solve",
+      scope: "Workstreams commonly covered in this mandate",
+      process: "A structured process built for complex IP work",
+      whyChoose: "Legal, technical, and commercial context in one team",
+      industries: "Where this service is most often applied",
+    },
+    overview: [
+      service.intro,
+      `${service.label} work at IP-MEX is structured around defensible legal positioning, clear commercial priorities, and practical execution for technology-driven organizations.`,
+    ],
+    deliverables:
+      highlights.length > 0
+        ? highlights
+        : [
+            `Strategic review for ${service.label.toLowerCase()}`,
+            "Structured legal guidance aligned with commercial objectives",
+            "Cross-border support for Canadian and U.S. matters",
+          ],
+    process: [
+      {
+        title: "Assess",
+        description:
+          "Review the legal, technical, and commercial context to identify the right scope and priorities.",
+      },
+      {
+        title: "Structure",
+        description:
+          "Design a focused work plan aligned with business stage, timing, and risk exposure.",
+      },
+      {
+        title: "Execute",
+        description:
+          "Deliver the required legal work with clear coordination, documentation, and next-step guidance.",
+      },
+    ],
+    differentiators: [
+      {
+        title: "Cross-Border Expertise",
+        description:
+          "Registered before CIPO and the USPTO, with strategies built for Canadian, U.S., and international coordination.",
+      },
+      {
+        title: "Technical Depth",
+        description:
+          "Scientific and engineering backgrounds that support technically credible legal work for complex subject matter.",
+      },
+      {
+        title: "Strategic Alignment",
+        description:
+          "Advice is tied to growth, funding, diligence, and long-term enterprise value rather than isolated filings.",
+      },
+    ],
+  };
+}
+
 export default function ServiceTemplate({ service }: Props) {
-  const content = SERVICE_CONTENT[service.slug];
+  const content = SERVICE_CONTENT[service.slug] ?? getFallbackContent(service);
+  const parentService =
+    SERVICES.find(parent => parent.slug === service.slug) ??
+    SERVICES.find(parent => parent.children?.some(child => child.slug === service.slug));
+  const childServices = service.children ?? [];
+  const siblingServices =
+    parentService?.children?.filter(child => child.slug !== service.slug) ?? [];
+  const relatedServices =
+    childServices.length > 0
+      ? childServices
+      : siblingServices.length > 0
+        ? siblingServices
+        : SERVICES.filter(item => item.slug !== service.slug).slice(0, 3);
+  const focusAreas = service.highlights ?? [];
+  const cta = service.cta ?? parentService?.cta;
+  const breadcrumbLabel =
+    parentService && parentService.slug !== service.slug ? parentService.label : "Services";
+  const headings = content.headings ?? {};
 
   return (
     <main className="bg-white text-neutral-900">
+      <section className="relative overflow-hidden bg-[#050b12] text-white pt-28 pb-16 md:pt-40 md:pb-24 lg:pt-48 lg:pb-28">
+        <Image
+          src={service.heroImage}
+          alt={service.label}
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/85 via-black/55 to-transparent" />
 
-     {/* HERO */}
-<section className="relative h-[65vh] min-h-130 md:h-[75vh]">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10">
+          <div className="max-w-3xl">
+            <div className="eyebrow text-red-400 mb-6">
+              {parentService && parentService.slug !== service.slug
+                ? `${breadcrumbLabel} / ${service.label}`
+                : "Intellectual Property Law Firm"}
+            </div>
 
-  {/* Background */}
-  <Image
-    src={service.heroImage}
-    alt={service.label}
-    fill
-    priority
-    className="object-cover"
-  />
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-white">
+              {service.label}
+            </h1>
 
-  {/* Base overlay */}
-  <div className="absolute inset-0 bg-black/65" />
+            <p className="mt-5 text-base md:text-xl text-slate-300 leading-relaxed max-w-2xl">
+              {service.intro}
+            </p>
 
-  {/* Left gradient for readability */}
-  <div className="absolute inset-0 bg-gradient-to-red from-black/85 via-black/55 to-transparent" />
+            <div className="mt-8 flex flex-wrap gap-3">
+              {focusAreas.slice(0, 4).map(item => (
+                <span
+                  key={item}
+                  className="border border-white/15 bg-white/5 px-4 py-2 text-sm text-slate-200"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
 
-  {/* Content */}
-  <div className="absolute bottom-16 md:bottom-24 left-0 w-full">
-    <div className="max-w-7xl mx-auto px-6 md:px-10">
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link href="/contact" className="btn-primary">
+                {cta?.buttonLabel ?? "Schedule Consultation"}
+              </Link>
+              <a
+                href="#service-scope"
+                className="btn-secondary border-white/20 text-white hover:bg-white/10"
+              >
+                Explore service scope
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div className="max-w-xl md:max-w-2xl border-l-[3px] border-red-600 pl-6 md:pl-8">
+      <section className="border-b border-neutral-200 bg-neutral-50 py-10 md:py-14">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 md:gap-12">
+          <div>
+            <p className="eyebrow text-red-600 mb-3">Positioning</p>
+            <p className="text-lg text-neutral-700 leading-relaxed">
+              {content.snapshot.positioning}
+            </p>
+          </div>
+          <div>
+            <p className="eyebrow text-red-600 mb-3">Coverage</p>
+            <p className="text-lg text-neutral-700 leading-relaxed">
+              {content.snapshot.coverage}
+            </p>
+          </div>
+          <div>
+            <p className="eyebrow text-red-600 mb-3">Jurisdiction</p>
+            <p className="text-lg text-neutral-700 leading-relaxed">
+              {content.snapshot.jurisdiction}
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <p className="text-[11px] md:text-xs tracking-[0.35em] uppercase text-gray-300 mb-4 md:mb-6">
-          Intellectual Property Advisory
-        </p>
+      <section className="bg-white py-16 md:py-24 xl:py-32">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] gap-12 md:gap-16 items-start">
+          <div>
+            <span className="eyebrow text-red-600 mb-6 block">Strategic Overview</span>
+            <h2 className="text-3xl md:text-5xl font-semibold text-neutral-900 leading-tight max-w-xl">
+              {headings.overview ?? "What this service is designed to solve"}
+            </h2>
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight text-white">
-          {service.label}
-        </h1>
+            <div className="mt-10 space-y-6 text-neutral-600 leading-relaxed text-base md:text-lg max-w-xl">
+              {content.overview.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
 
-      </div>
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6">
+            {(focusAreas.length > 0 ? focusAreas : content.deliverables.slice(0, 4)).map(item => (
+              <div key={item} className="border border-neutral-200 bg-neutral-50 p-6">
+                <p className="text-xs uppercase tracking-[0.25em] text-red-600 mb-3">
+                  {focusAreas.length > 0 ? "Key Focus" : "Core Work"}
+                </p>
+                <p className="text-lg font-semibold text-neutral-900 leading-snug">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-    </div>
-  </div>
-
-</section>
-      {/* OVERVIEW */}
- <section className="relative bg-neutral-50 py-28 md:py-36 overflow-hidden">
-
-  {/* Architectural Background Line */}
-  <div className="absolute top-0 left-0 w-full h-px bg-neutral-200" />
-
-  <div className="max-w-6xl mx-auto px-6 md:px-8 grid md:grid-cols-12 gap-12">
-
-    {/* Left Accent Column */}
-    <div className="hidden md:block md:col-span-1 relative">
-      <div className="absolute left-1/2 top-0 bottom-0 w-px bg-neutral-300" />
-    </div>
-
-    {/* Main Content */}
-    <div className="md:col-span-8">
-
-      <div className="mb-16">
-        <span className="block text-xs tracking-[0.35em] uppercase text-neutral-500 mb-4">
-          Service Insight
-        </span>
-
-        <h2 className="text-3xl md:text-4xl font-light text-neutral-900">
-          Strategic Overview
-        </h2>
-
-        <div className="mt-6 w-20 h-[2px] bg-red-600" />
-      </div>
-
-      <div className="space-y-10 text-[17px] md:text-lg text-neutral-700 leading-relaxed max-w-3xl">
-
-        {content.overview.map((paragraph, index) => (
-          <p
-            key={index}
-            className="opacity-0 animate-fadeInUp"
-            style={{ animationDelay: `${index * 120}ms`, animationFillMode: "forwards" }}
-          >
-            {paragraph}
-          </p>
-        ))}
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-{/* DELIVERABLES */}
-<section className="relative py-20 md:py-40 overflow-hidden text-white">
-
-  {/* Background System */}
-  <div className="absolute inset-0 bg-gradient-to-b from-[#0b1220] via-[#0b1220]/95 to-[#0b1220]">
-    <div className="absolute inset-0 opacity-[0.15] 
-                      bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.4)_1px,transparent_0)] 
-                      bg-size-[28px_28px]" />
-  </div>
-
-  <div className="relative max-w-5xl mx-auto px-6 text-center">
-
-    <span className="block text-xs tracking-[0.35em] uppercase text-red-500 mb-8">
-      Deliverables
-    </span>
-
-    <h2 className="text-4xl md:text-5xl leading-tight font-semibold mb-20">
-      Scope of Services
-    </h2>
-
-    <ServiceRotator items={content.deliverables} />
-
-  </div>
-</section>
-
-
-
-
-
-
-      <section className="relative bg-white py-32 md:py-40">
-
-  {/* Subtle top divider */}
-  <div className="absolute top-0 left-0 w-full h-px bg-neutral-200" />
-
-  <div className="max-w-7xl mx-auto px-6 md:px-10">
-
-    <div className="grid md:grid-cols-12 gap-y-20 gap-x-16">
-
-      {/* Section Heading */}
-      <div className="md:col-span-4">
-        <h2 className="text-3xl md:text-4xl font-light text-neutral-900 leading-tight">
-          Why<br />IP-MEX
-        </h2>
-
-        <div className="mt-6 w-16 h-[2px] bg-red-600" />
-      </div>
-
-      {/* Content Grid */}
-      <div className="md:col-span-8 grid md:grid-cols-2 gap-16">
-
-        <div className="border-l-2 border-neutral-200 pl-8">
-          <h3 className="text-lg font-semibold mb-4">
-            Cross-Border Expertise
-          </h3>
-          <p className="text-neutral-600 leading-relaxed">
-            Registered before CIPO and USPTO, we advise on Canadian, U.S., and international filings including PCT and EPO pathways.
-          </p>
+      <section id="service-scope" className="relative overflow-hidden py-16 md:py-24 xl:py-32 text-white">
+        <div className="absolute inset-0 bg-linear-to-b from-[#0b1220] via-[#0b1220]/95 to-[#0b1220]">
+          <div className="absolute inset-0 opacity-[0.15] bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.4)_1px,transparent_0)] bg-size-[28px_28px]" />
         </div>
 
-        <div className="border-l-2 border-neutral-200 pl-8">
-          <h3 className="text-lg font-semibold mb-4">
-            Technical Depth
-          </h3>
-          <p className="text-neutral-600 leading-relaxed">
-            Our professionals hold advanced degrees in engineering and applied sciences with decades of industry experience.
-          </p>
+        <div className="relative max-w-5xl mx-auto px-6 text-center">
+          <span className="eyebrow text-red-500 mb-8 block">Scope of Services</span>
+          <h2 className="text-4xl md:text-5xl leading-tight font-semibold mb-20">
+            {headings.scope ?? "Workstreams commonly covered in this mandate"}
+          </h2>
+
+          <ServiceRotator items={content.deliverables} />
         </div>
+      </section>
 
-        <div className="border-l-2 border-neutral-200 pl-8 md:col-span-2">
-          <h3 className="text-lg font-semibold mb-4">
-            Strategic Alignment
-          </h3>
-          <p className="text-neutral-600 leading-relaxed max-w-2xl">
-            We integrate patent strategy with business objectives to build defensible and scalable IP portfolios aligned with long-term growth.
-          </p>
+      <section className="bg-white py-16 md:py-24 xl:py-32 border-t border-neutral-200">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-10 md:gap-16 items-start">
+          <div className="md:col-span-4">
+            <span className="eyebrow text-red-600 mb-6 block">How We Work</span>
+            <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900 leading-tight">
+              {headings.process ?? "A structured process built for complex IP work"}
+            </h2>
+          </div>
+
+          <div className="md:col-span-8 grid md:grid-cols-3 gap-6 md:gap-8">
+            {content.process.map((step, index) => (
+              <div key={step.title} className="border-t-2 border-red-600 pt-6">
+                <p className="text-sm uppercase tracking-[0.25em] text-neutral-400 mb-4">
+                  Step 0{index + 1}
+                </p>
+                <h3 className="text-xl font-semibold text-neutral-900 mb-4">{step.title}</h3>
+                <p className="text-neutral-600 leading-relaxed">{step.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
+      </section>
 
-      </div>
+      <section className="bg-neutral-50 py-16 md:py-24 xl:py-32 border-t border-neutral-200">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-10 md:gap-16 items-start">
+          <div className="md:col-span-4">
+            <span className="eyebrow text-red-600 mb-6 block">Why IP-MEX</span>
+            <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900 leading-tight">
+              {headings.whyChoose ?? "Legal, technical, and commercial context in one team"}
+            </h2>
+          </div>
 
-    </div>
+          <div className="md:col-span-8 grid md:grid-cols-2 gap-6 md:gap-8">
+            {content.differentiators.map((item, index) => (
+              <div
+                key={item.title}
+                className={`border border-neutral-200 bg-white p-7 ${index === 2 ? "md:col-span-2" : ""}`}
+              >
+                <h3 className="text-lg font-semibold mb-4 text-neutral-900">{item.title}</h3>
+                <p className="text-neutral-600 leading-relaxed max-w-3xl">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-  </div>
-</section>
+      {content.industries && (
+        <section className="relative overflow-hidden py-16 md:py-24 xl:py-32 text-white">
+          <div className="absolute inset-0 bg-linear-to-b from-[#0b1220] via-[#0b1220]/95 to-[#0b1220]" />
+          <div className="absolute inset-0 pointer-events-none opacity-[0.07] bg-[linear-gradient(to_right,rgba(255,255,255,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.15)_1px,transparent_1px)] bg-size-[48px_48px]" />
+          <div className="absolute inset-0 bg-linear-to-r from-black/30 via-transparent to-black/30" />
 
+          <div className="relative max-w-7xl mx-auto px-6">
+            <div className="text-center mb-16 md:mb-24">
+              <span className="eyebrow text-red-500 mb-6 block">Technical Domains</span>
+              <h2 className="text-4xl md:text-5xl font-semibold">
+                {headings.industries ?? "Where this service is most often applied"}
+              </h2>
+            </div>
 
+            <VerticalSlidingDomains items={content.industries} />
+          </div>
+        </section>
+      )}
 
-{/* INDUSTRIES */}
-{content.industries && (
-  <section className="relative py-20 md:py-44 overflow-hidden text-white">
+      <section className="bg-white py-16 md:py-24 xl:py-32 border-t border-neutral-200">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-10 md:gap-16 items-start">
+          <div className="md:col-span-4">
+            <span className="eyebrow text-red-600 mb-6 block">
+              {childServices.length > 0
+                ? "Related Capabilities"
+                : parentService && parentService.slug !== service.slug
+                  ? "Related Services"
+                  : "Further Support"}
+            </span>
+            <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900 leading-tight">
+              {childServices.length > 0
+                ? `Sub-services within ${service.label}`
+                : parentService && parentService.slug !== service.slug
+                  ? `More within ${parentService.label}`
+                  : "Adjacent services you may also need"}
+            </h2>
+          </div>
 
-    {/* Background Base */}
-    <div className="absolute inset-0 bg-gradient-to-b from-[#0b1220] via-[#0b1220]/95 to-[#0b1220]" />
+          <div className={`md:col-span-8 grid gap-6 ${relatedServices.length > 2 ? "md:grid-cols-2 xl:grid-cols-3" : "md:grid-cols-2"}`}>
+            {relatedServices.map(item => (
+              <Link
+                key={item.slug}
+                href={`/services/${item.slug}`}
+                className="group border border-neutral-200 bg-neutral-50 p-7 hover:border-red-600 transition-colors"
+              >
+                <p className="text-xs uppercase tracking-[0.25em] text-red-600 mb-4">{item.tagline}</p>
+                <h3 className="text-xl font-semibold text-neutral-900 mb-3 group-hover:text-red-600 transition-colors">
+                  {item.label}
+                </h3>
+                <p className="text-neutral-600 leading-relaxed mb-6">{item.description}</p>
+                <span className="text-sm font-medium text-neutral-900 group-hover:text-red-600 transition-colors">
+                  View service →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
-    {/* Check / Grid Texture */}
-    {/* subtle grid pattern */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.07] bg-[linear-gradient(to_right,rgba(255,255,255,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.15)_1px,transparent_1px)] [background-size:48px_48px]" />
+      {cta && (
+        <section className="relative overflow-hidden bg-[#050b12] text-white py-16 md:py-24 xl:py-32 px-6">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.14),transparent_40%)]" />
+          <div className="relative max-w-5xl mx-auto text-center">
+            <span className="eyebrow text-red-500 mb-8 block">Next Step</span>
+            <h2 className="text-4xl md:text-5xl font-semibold mb-8 leading-tight">{cta.title}</h2>
+            <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-12 max-w-3xl mx-auto">
+              {cta.description}
+            </p>
+            <Link href="/contact" className="btn-primary">
+              {cta.buttonLabel}
+            </Link>
+          </div>
+        </section>
+      )}
 
-    {/* Subtle vignette depth */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-
-    <div className="relative max-w-7xl mx-auto px-6">
-
-      <div className="text-center mb-24">
-        <span className="block text-xs tracking-[0.35em] uppercase text-red-500 mb-6">
-          Expertise
-        </span>
-
-        <h2 className="text-4xl md:text-5xl font-semibold">
-          Technical Domains
-        </h2>
-      </div>
-
-      <VerticalSlidingDomains items={content.industries} />
-
-    </div>
-  </section>
-)}
-
-
-      
-
-      {/* CONTACT */}
- 
-        <ContactPrompt />
-        
-
-
+      <ContactPrompt />
     </main>
   );
 }
