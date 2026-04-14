@@ -65,7 +65,7 @@ export default function BlogPreview() {
               >
                 <div className="relative aspect-square overflow-hidden">
                   <img
-                    src="/images/blog.jpg"
+                    src="/insights/globe.jpg"
                     alt=""
                     className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-90 transition-opacity"
                   />
