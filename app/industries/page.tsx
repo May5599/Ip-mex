@@ -5,12 +5,12 @@ import IndustryResearch from "@/app/ui/IndustryResearch"
 import ContactPrompt from "@/app/sections/ContactPrompt"
 
 export const metadata = {
-  title: "Industries | IP-MEX | IP Law for Technology Companies",
+  title: "Industries | IP-MEX® | IP Law for Technology Companies",
   description:
-    "IP-MEX provides patent and trademark counsel to technology companies across AI, semiconductors, software, biotechnology, fintech, telecommunications, cybersecurity, and autonomous systems.",
+    "IP-MEX® provides patent and trademark counsel to technology companies across AI, semiconductors, software, biotechnology, fintech, telecommunications, cybersecurity, and autonomous systems.",
   openGraph: {
-    title: "Industries | IP-MEX | IP Law for Technology Companies",
-    description: "IP-MEX provides patent and trademark counsel to technology companies in AI, semiconductors, software, biotech, fintech, telecom, cybersecurity, and autonomous systems.",
+    title: "Industries | IP-MEX® | IP Law for Technology Companies",
+    description: "IP-MEX® provides patent and trademark counsel to technology companies in AI, semiconductors, software, biotech, fintech, telecom, cybersecurity, and autonomous systems.",
     type: "website"
   }
 }
@@ -39,7 +39,7 @@ export default function IndustriesPage() {
             </h1>
 
             <p className="mt-8 text-base md:text-lg text-slate-300 max-w-2xl leading-relaxed">
-              IP-MEX works with companies across AI, software, semiconductors, biotechnology, fintech, telecommunications, cybersecurity, and autonomous systems, aligning legal strategy with sector-specific innovation pressure.
+              IP-MEX® works with companies across AI, software, semiconductors, biotechnology, fintech, telecommunications, cybersecurity, and autonomous systems, aligning legal strategy with sector-specific innovation pressure.
             </p>
           </div>
 

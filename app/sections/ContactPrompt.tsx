@@ -33,7 +33,7 @@ export default function ContactPrompt() {
               href="/contact"
               className="inline-flex items-center gap-5 px-11 py-4 text-sm font-medium bg-red-600 hover:bg-red-500 transition-colors"
             >
-              Contact IP-MEX
+              Contact IP-MEX®
               <span className="text-lg">→</span>
             </Link>
           </div>

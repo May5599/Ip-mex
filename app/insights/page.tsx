@@ -2,12 +2,12 @@ import { getInsightHref, INSIGHTS } from "@/app/lib/insights"
 import Link from "next/link"
 
 export const metadata = {
-  title: "IP & Patent Insights | IP-MEX | Strategy & Commentary",
+  title: "IP & Patent Insights | IP-MEX® | Strategy & Commentary",
   description:
-    "Expert commentary and analysis on patent strategy, trademark law, IP valuation, and technology innovation from IP-MEX — Canada's IP law firm.",
+    "Expert commentary and analysis on patent strategy, trademark law, IP valuation, and technology innovation from IP-MEX® — Canada's IP law firm.",
   openGraph: {
-    title: "IP & Patent Insights | IP-MEX",
-    description: "Expert commentary and analysis on patent strategy, trademark law, IP valuation, and technology innovation from IP-MEX — Canada's IP law firm.",
+    title: "IP & Patent Insights | IP-MEX®",
+    description: "Expert commentary and analysis on patent strategy, trademark law, IP valuation, and technology innovation from IP-MEX® — Canada's IP law firm.",
     type: "website"
   }
 }
@@ -231,7 +231,7 @@ export default function InsightsPage() {
           <div className="max-w-3xl mb-20">
 
             <span className="text-xs tracking-[0.35em] uppercase text-red-500">
-              IP-MEX Research
+              IP-MEX® Research
             </span>
 
             <h2 className="text-4xl font-semibold text-neutral-900 mt-6 mb-6">
@@ -239,7 +239,7 @@ export default function InsightsPage() {
             </h2>
 
             <p className="text-neutral-600 text-lg">
-              IP-MEX publishes research articles, industry analysis,
+              IP-MEX® publishes research articles, industry analysis,
               and commentary on intellectual property strategy,
               innovation policy, and emerging technology sectors.
             </p>
@@ -319,7 +319,7 @@ export default function InsightsPage() {
 
             <p className="text-slate-300 mb-8">
               Subscribe to receive research insights and commentary from
-              IP-MEX on global technology innovation and patent strategy.
+              IP-MEX® on global technology innovation and patent strategy.
             </p>
 
             <a href="/contact" className="border border-red-500 px-8 py-3 text-red-500 hover:bg-red-500 hover:text-white transition inline-block">

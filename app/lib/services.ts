@@ -102,7 +102,7 @@ export const SERVICES: ServiceItem[] = [
     cta: {
       title: "Align IP With Business Growth",
       description:
-        "Work with IP-MEX to structure patent, trademark, and portfolio strategy around product, funding, and expansion goals.",
+        "Work with IP-MEX® to structure patent, trademark, and portfolio strategy around product, funding, and expansion goals.",
       buttonLabel: "Discuss IP Strategy"
     },
     seo: {
@@ -186,7 +186,7 @@ export const SERVICES: ServiceItem[] = [
         cta: {
           title: "Add Fractional IP Leadership",
           description:
-            "Use IP-MEX as embedded outside counsel for portfolio governance, invention capture, budget planning, and cross-border filing management.",
+            "Use IP-MEX® as embedded outside counsel for portfolio governance, invention capture, budget planning, and cross-border filing management.",
           buttonLabel: "Request Virtual Counsel"
         },
         seo: {
@@ -273,7 +273,7 @@ export const SERVICES: ServiceItem[] = [
         cta: {
           title: "Support Complex IP Litigation With Technical Depth",
           description:
-            "Work with IP-MEX on expert preparation, technical evidence, prior-art analysis, and structured support for litigation teams.",
+            "Work with IP-MEX® on expert preparation, technical evidence, prior-art analysis, and structured support for litigation teams.",
           buttonLabel: "Request Litigation Support"
         },
         seo: {

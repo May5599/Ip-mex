@@ -1,10 +1,10 @@
 export const metadata = {
-  title: "About IP-MEX | Canadian IP Law Firm | Patent Agents & IP Lawyers",
+  title: "About IP-MEX® | Canadian IP Law Firm | Patent Agents & IP Lawyers",
   description:
-    "IP-MEX is a Canadian IP law firm with IP lawyers (LSO), registered patent and trademark agents (CPATA/USPTO) holding PhDs and 20+ years of experience in Canada and the USA.",
+    "IP-MEX® is a Canadian IP law firm with IP lawyers (LSO), registered patent and trademark agents (CPATA/USPTO) holding PhDs and 20+ years of experience in Canada and the USA.",
   openGraph: {
-    title: "About IP-MEX | IP Law Firm",
-    description: "IP-MEX is a Canadian IP law firm with IP lawyers (LSO), registered patent and trademark agents (CPATA/USPTO) holding PhDs and 20+ years of experience.",
+    title: "About IP-MEX® | IP Law Firm",
+    description: "IP-MEX® is a Canadian IP law firm with IP lawyers (LSO), registered patent and trademark agents (CPATA/USPTO) holding PhDs and 20+ years of experience.",
     type: "website"
   }
 }
@@ -18,7 +18,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
 
           <span className="eyebrow text-red-500">
-            About IP-MEX
+            About IP-MEX®
           </span>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mt-8 leading-tight max-w-4xl">
@@ -26,7 +26,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-slate-300 text-base md:text-lg mt-6 md:mt-8 max-w-2xl leading-relaxed">
-            IP-MEX is an intellectual property law firm in Ottawa, Ontario. We advise clients across Canada and the USA on patents, trademarks, IP strategy, disputes, and long-term portfolio development.
+            IP-MEX® is an intellectual property law firm in Ottawa, Ontario. We advise clients across Canada and the USA on patents, trademarks, IP strategy, disputes, and long-term portfolio development.
           </p>
 
         </div>
@@ -48,7 +48,7 @@ export default function AboutPage() {
               </h2>
 
               <p className="text-neutral-600 text-lg leading-relaxed mb-6">
-                IP-MEX combines legal credentials with advanced scientific and engineering backgrounds. Our lawyers, patent agents, trademark agents, and technical consultants work with inventors, founders, in-house teams, and investors on complex intellectual property matters.
+                IP-MEX® combines legal credentials with advanced scientific and engineering backgrounds. Our lawyers, patent agents, trademark agents, and technical consultants work with inventors, founders, in-house teams, and investors on complex intellectual property matters.
               </p>
 
               <p className="text-neutral-600 text-lg leading-relaxed mb-6">
@@ -150,7 +150,7 @@ export default function AboutPage() {
                   Dr. Daisy Williams is an IP lawyer with the Law Society of Ontario and a registered patent and trademark agent with CPATA. Her experience spans patent drafting and prosecution, trademark strategy, litigation exposure, in-house portfolio management, and IP training.
                 </p>
                 <p className="text-neutral-600 text-sm leading-relaxed mb-6">
-                  Before returning to IP-MEX, Daisy practiced IP litigation in Ottawa and later served as in-house IP counsel for an international company, helping manage global patent and trademark matters. She brings a rare mix of legal, technical, and commercial experience to client strategy.
+                  Before returning to IP-MEX®, Daisy practiced IP litigation in Ottawa and later served as in-house IP counsel for an international company, helping manage global patent and trademark matters. She brings a rare mix of legal, technical, and commercial experience to client strategy.
                 </p>
 
                 <div className="grid sm:grid-cols-3 gap-4 pt-6 border-t border-neutral-100">
@@ -211,7 +211,7 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  Founder of IP-MEX with 25+ years of IP management experience, including senior roles at Nortel Networks, Tropic Networks, and MosAid. She has managed large enterprise portfolios, personally filed 300+ patent applications, holds 8 patents, and has authored 35 scientific publications.
+                  Founder of IP-MEX® with 25+ years of IP management experience, including senior roles at Nortel Networks, Tropic Networks, and MosAid. She has managed large enterprise portfolios, personally filed 300+ patent applications, holds 8 patents, and has authored 35 scientific publications.
                 </p>
 
               </div>
@@ -243,7 +243,7 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  Co-founder of IP-MEX with 20+ years of consulting experience in patent engineering, IP valuation, competitive intelligence, validity analysis, infringement review, and design-around work. He is the author of 25 scientific publications and 10 patents.
+                  Co-founder of IP-MEX® with 20+ years of consulting experience in patent engineering, IP valuation, competitive intelligence, validity analysis, infringement review, and design-around work. He is the author of 25 scientific publications and 10 patents.
                 </p>
 
               </div>
@@ -360,12 +360,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* WHY CHOOSE IP-MEX */}
+      {/* WHY CHOOSE IP-MEX® */}
       <section className="py-16 md:py-24 xl:py-32">
         <div className="max-w-7xl mx-auto px-6">
 
           <span className="eyebrow text-red-500">
-            Why IP-MEX
+            Why IP-MEX®
           </span>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-neutral-900 mt-6 mb-12 md:mb-16">
@@ -444,7 +444,7 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
-            Contact IP-MEX Inc. to discuss your patent, trademark, IP strategy, or virtual counsel requirements with our registered legal team.
+            Contact IP-MEX® Inc. to discuss your patent, trademark, IP strategy, or virtual counsel requirements with our registered legal team.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -463,7 +463,7 @@ export default function AboutPage() {
           </div>
 
           <p className="text-slate-400 text-sm mt-12">
-            IP-MEX Inc. | D2-150 Terence Matthews Crescent, Kanata, Ontario | Canada
+            IP-MEX® Inc. | D2-150 Terence Matthews Crescent, Kanata, Ontario | Canada
           </p>
 
         </div>

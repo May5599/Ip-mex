@@ -19,13 +19,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!insight) {
     return {
-      title: "Article Not Found | IP-MEX",
+      title: "Article Not Found | IP-MEX®",
       description: "The article you're looking for doesn't exist."
     }
   }
 
   return {
-    title: `${insight.title} | IP-MEX Insights`,
+    title: `${insight.title} | IP-MEX® Insights`,
     description: insight.excerpt,
     openGraph: {
       title: insight.title,
@@ -215,7 +215,7 @@ export default async function InsightPage({ params }: PageProps) {
             Need Strategic IP Guidance?
           </h2>
           <p className="text-lg text-neutral-600 mb-8">
-            IP-MEX advises organizations across North America on developing and protecting intellectual property strategies that support innovation and competitive advantage.
+            IP-MEX® advises organizations across North America on developing and protecting intellectual property strategies that support innovation and competitive advantage.
           </p>
           <a href="/contact" className="bg-red-500 hover:bg-red-600 text-white font-medium px-8 py-3 rounded-lg transition inline-block">
             Schedule a Consultation

@@ -175,7 +175,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       overview: "Patent work built around claim strength and business value",
       scope: "Patent mandates typically covered by the firm",
       process: "How patent matters are scoped and advanced",
-      whyChoose: "Why clients retain IP-MEX for patent work",
+      whyChoose: "Why clients retain IP-MEX® for patent work",
       industries: "Technical sectors where patent depth matters most",
     },
     overview: [
@@ -241,7 +241,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       overview: "Trademark protection shaped by how brands actually scale",
       scope: "Trademark matters commonly handled by the firm",
       process: "How brand protection is structured",
-      whyChoose: "Why clients engage IP-MEX on trademark work"
+      whyChoose: "Why clients engage IP-MEX® on trademark work"
     },
     overview: [
       "We advise startups, established businesses, and technology companies on trademark strategy that protects brand identity while supporting launch, expansion, and long-term market credibility.",
@@ -303,7 +303,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       overview: "IP strategy work that reaches beyond filing decisions",
       scope: "Strategic planning work typically handled",
       process: "How the strategy mandate is developed",
-      whyChoose: "Why organizations use IP-MEX for strategic IP planning"
+      whyChoose: "Why organizations use IP-MEX® for strategic IP planning"
     },
     overview: [
       "We integrate intellectual property strategy into broader business planning so patents, trademarks, trade secrets, and filing decisions support real commercial priorities rather than operate as isolated legal tasks.",
@@ -365,7 +365,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       overview: "Audit work focused on ownership, risk, and portfolio readiness",
       scope: "What an IP audit typically covers",
       process: "How the audit is conducted",
-      whyChoose: "Why clients use IP-MEX for IP audits"
+      whyChoose: "Why clients use IP-MEX® for IP audits"
     },
     overview: [
       "We conduct IP audits for organizations that need a clear picture of portfolio condition, ownership integrity, filing quality, and internal governance before a major business event or strategy reset.",
@@ -427,7 +427,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       overview: "Valuation work designed for decisions, not just reports",
       scope: "Common valuation deliverables",
       process: "How valuation analysis is structured",
-      whyChoose: "Why organizations use IP-MEX on valuation mandates"
+      whyChoose: "Why organizations use IP-MEX® on valuation mandates"
     },
     overview: [
       "We deliver structured IP valuation analysis for mergers, acquisitions, venture financing, licensing discussions, and internal portfolio strategy where decision-makers need more than a nominal asset count.",
@@ -489,7 +489,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       overview: "Outside counsel structured like an in-house IP function",
       scope: "What virtual counsel support can include",
       process: "How the virtual counsel model is implemented",
-      whyChoose: "Why companies use IP-MEX as virtual counsel"
+      whyChoose: "Why companies use IP-MEX® as virtual counsel"
     },
     overview: [
       "We act as embedded virtual IP counsel for companies that need consistent strategic oversight but are not ready for a full internal legal team dedicated to intellectual property.",
@@ -551,7 +551,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       overview: "Enforcement work grounded in risk, leverage, and evidentiary reality",
       scope: "Common enforcement strategy workstreams",
       process: "How enforcement matters are evaluated",
-      whyChoose: "Why clients engage IP-MEX on enforcement matters"
+      whyChoose: "Why clients engage IP-MEX® on enforcement matters"
     },
     overview: [
       "We advise organizations on how to evaluate and structure enforcement activity before a dispute escalates into an expensive or poorly prepared matter.",
@@ -613,7 +613,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       overview: "Technical infringement review that supports legal decisions",
       scope: "Common infringement-analysis deliverables",
       process: "How infringement review is conducted",
-      whyChoose: "Why counsel and clients retain IP-MEX for infringement analysis"
+      whyChoose: "Why counsel and clients retain IP-MEX® for infringement analysis"
     },
     overview: [
       "We conduct structured infringement analysis for patents and technology disputes where the accuracy of the technical comparison is central to the legal position.",
@@ -675,7 +675,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       overview: "Litigation support built for technically complex IP matters",
       scope: "Support work commonly provided to counsel",
       process: "How litigation support is organized",
-      whyChoose: "Why counsel engage IP-MEX on litigation support matters"
+      whyChoose: "Why counsel engage IP-MEX® on litigation support matters"
     },
     overview: [
       "We support counsel on technically complex intellectual property disputes by helping organize evidence, frame technical issues, and prepare analysis that can withstand adversarial scrutiny.",
@@ -737,7 +737,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       overview: "Training designed to improve real IP decision-making",
       scope: "Common education and workshop formats",
       process: "How training programs are built",
-      whyChoose: "Why organizations retain IP-MEX for IP education"
+      whyChoose: "Why organizations retain IP-MEX® for IP education"
     },
     overview: [
       "We provide intellectual property education for organizations that want their teams to make better legal and commercial decisions around innovation, branding, confidentiality, and portfolio development.",

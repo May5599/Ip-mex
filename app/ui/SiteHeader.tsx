@@ -45,7 +45,7 @@ export default function SiteHeader() {
           className="text-lg tracking-[0.35em] font-semibold"
           onClick={() => setMobileOpen(false)}
         >
-          IP-MEX
+          IP-MEX®
         </Link>
 
         {/* Desktop Navigation */}
@@ -231,7 +231,7 @@ export default function SiteHeader() {
                 onClick={() => setMobileOpen(false)}
                 className="block w-full text-center px-6 py-4 bg-red-600 hover:bg-red-500 text-white text-sm font-medium transition-colors"
               >
-                Speak with IP-MEX
+                Speak with IP-MEX®
               </Link>
             </div>
           </nav>

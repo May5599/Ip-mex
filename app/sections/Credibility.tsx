@@ -19,7 +19,7 @@ export default function Credibility() {
 
         <div className="md:col-span-7 space-y-10">
           <p className="text-lg text-slate-600 max-w-xl leading-relaxed">
-            IP-MEX partners with emerging companies, established enterprises,
+            IP-MEX® partners with emerging companies, established enterprises,
             and investment groups to build, protect, and commercialize
             intellectual property portfolios aligned with long-term business
             objectives.

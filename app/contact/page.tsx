@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Contact IP-MEX | IP Lawyers & Patent Agents | Kanata, Ontario",
+  title: "Contact IP-MEX® | IP Lawyers & Patent Agents | Kanata, Ontario",
   description:
-    "Contact IP-MEX Inc. in Kanata, Ontario to speak with our registered IP lawyers and patent agents about patents, trademarks, IP strategy, and virtual in-house counsel services.",
+    "Contact IP-MEX® Inc. in Kanata, Ontario to speak with our registered IP lawyers and patent agents about patents, trademarks, IP strategy, and virtual in-house counsel services.",
   openGraph: {
-    title: "Contact IP-MEX Inc.",
+    title: "Contact IP-MEX® Inc.",
     description: "Contact our registered IP lawyers and patent agents in Kanata, Ontario for patents, trademarks, IP strategy, and virtual counsel services.",
     type: "website"
   }
@@ -54,7 +54,7 @@ export default function ContactPage() {
               className="space-y-6"
             >
               {/* FormSubmit config */}
-              <input type="hidden" name="_subject" value="New IP-MEX Website Enquiry" />
+              <input type="hidden" name="_subject" value="New IP-MEX® Website Enquiry" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
               <input type="text" name="_honey" style={{ display: "none" }} />

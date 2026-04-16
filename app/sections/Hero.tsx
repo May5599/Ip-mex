@@ -33,7 +33,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 max-w-md text-lg text-slate-300">
-            IP-MEX is a Canadian IP law firm in Ottawa, Ontario representing
+            IP-MEX® is a Canadian IP law firm in Ottawa, Ontario representing
             technology-driven companies in protecting, enforcing, and
             maximizing the value of their intellectual property across
             Canada and the USA.
@@ -44,7 +44,7 @@ export default function Hero() {
               href="/contact"
               className="px-7 py-3 text-sm font-medium bg-red-600 hover:bg-red-500 transition-colors"
             >
-              Speak with IP-MEX
+              Speak with IP-MEX®
             </Link>
 
             <Link

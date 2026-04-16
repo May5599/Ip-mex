@@ -17,13 +17,13 @@ export default function Footer() {
           {/* brand */}
           <div className="md:col-span-4">
             <h3 className="text-white text-lg tracking-widest mb-6">
-              IP-MEX
+              IP-MEX®
             </h3>
             <p className="text-sm leading-relaxed max-w-sm mb-6">
-              IP-MEX Inc. is a Canadian intellectual property law firm specializing in patents, trademarks, and IP strategy services. Registered patent agents and IP lawyers serving clients across Canada and North America.
+              IP-MEX® Inc. is a Canadian intellectual property law firm specializing in patents, trademarks, and IP strategy services. Registered patent agents and IP lawyers serving clients across Canada and North America.
             </p>
             <div className="space-y-2 text-xs text-slate-400">
-              <p>IP-MEX Inc.</p>
+              <p>IP-MEX® Inc.</p>
               <p>D2-150 Terence Matthews Cres.</p>
               <p>Kanata, ON K2M 1X4, Canada</p>
             </div>
@@ -79,9 +79,14 @@ export default function Footer() {
 
         {/* bottom */}
         <div className="mt-12 md:mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} IP-MEX Inc. All rights reserved.
-          </p>
+          <div className="space-y-1">
+            <p className="text-xs text-slate-500">
+              © {new Date().getFullYear()} IP-MEX® Inc. All rights reserved.
+            </p>
+            <p className="text-xs text-slate-500">
+              IP-MEX® is a registered trademark of IP-MEX Inc.
+            </p>
+          </div>
           <p className="text-xs text-slate-500">
             Intellectual Property Law Firm · Kanata, Ontario · Canada
           </p>

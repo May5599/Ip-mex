@@ -32,7 +32,7 @@ function getFallbackContent(service: ServiceItem): ServiceContent {
     },
     overview: [
       service.intro,
-      `${service.label} work at IP-MEX is structured around defensible legal positioning, clear commercial priorities, and practical execution for technology-driven organizations.`,
+      `${service.label} work at IP-MEX® is structured around defensible legal positioning, clear commercial priorities, and practical execution for technology-driven organizations.`,
     ],
     deliverables:
       highlights.length > 0
@@ -246,7 +246,7 @@ export default function ServiceTemplate({ service }: Props) {
       <section className="bg-neutral-50 py-16 md:py-24 xl:py-32 border-t border-neutral-200">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-10 md:gap-16 items-start">
           <div className="md:col-span-4">
-            <span className="eyebrow text-red-600 mb-6 block">Why IP-MEX</span>
+            <span className="eyebrow text-red-600 mb-6 block">Why IP-MEX®</span>
             <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900 leading-tight">
               {headings.whyChoose ?? "Legal, technical, and commercial context in one team"}
             </h2>

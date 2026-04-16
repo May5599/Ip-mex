@@ -21,14 +21,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!service) {
     return {
-      title: "Service Not Found | IP-MEX",
+      title: "Service Not Found | IP-MEX®",
       description: "The service page you are looking for could not be found.",
     };
   }
 
   const title = service.seo?.title
-    ? `${service.seo.title} | IP-MEX`
-    : `${service.label} Services | IP-MEX`;
+    ? `${service.seo.title} | IP-MEX®`
+    : `${service.label} Services | IP-MEX®`;
 
   const description = service.seo?.description || service.intro;
 

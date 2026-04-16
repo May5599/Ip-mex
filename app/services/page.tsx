@@ -2,7 +2,7 @@
 // import { SERVICES } from "@/app/lib/services";
 
 // export const metadata = {
-//   title: "Services | IP-MEX",
+//   title: "Services | IP-MEX®",
 // };
 
 // export default function ServicesPage() {
@@ -43,11 +43,11 @@ import Image from "next/image";
 import { SERVICES } from "@/app/lib/services";
 
 export const metadata = {
-  title: "IP Legal Services | IP-MEX — Patents, Trademarks & IP Strategy",
-  description: "IP-MEX provides patent prosecution, trademark registration, IP strategy, audits, valuations, and virtual in-house counsel to startups and enterprises in Canada and the USA.",
+  title: "IP Legal Services | IP-MEX® — Patents, Trademarks & IP Strategy",
+  description: "IP-MEX® provides patent prosecution, trademark registration, IP strategy, audits, valuations, and virtual in-house counsel to startups and enterprises in Canada and the USA.",
   openGraph: {
-    title: "IP Legal Services | IP-MEX",
-    description: "IP-MEX provides patent prosecution, trademark registration, IP strategy, audits, valuations, and virtual in-house counsel in Canada and the USA.",
+    title: "IP Legal Services | IP-MEX®",
+    description: "IP-MEX® provides patent prosecution, trademark registration, IP strategy, audits, valuations, and virtual in-house counsel in Canada and the USA.",
     type: "website",
   },
 };
@@ -81,7 +81,7 @@ export default function ServicesPage() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-slate-300 leading-relaxed">
-              IP-MEX advises clients across Ottawa, Ontario, Canada, and the USA on patents, trademarks, portfolio strategy, disputes, and long-term IP governance.
+              IP-MEX® advises clients across Ottawa, Ontario, Canada, and the USA on patents, trademarks, portfolio strategy, disputes, and long-term IP governance.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-5">
@@ -89,7 +89,7 @@ export default function ServicesPage() {
                 href="/contact"
                 className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-500 px-7 py-3 text-sm font-medium transition-colors"
               >
-                Speak with IP-MEX
+                Speak with IP-MEX®
                 <span>→</span>
               </Link>
 
@@ -301,7 +301,7 @@ export default function ServicesPage() {
               Deeper support for specific IP mandates
             </h2>
             <p className="mt-8 text-lg text-slate-300 leading-relaxed max-w-xl">
-              Beyond core practice areas, IP-MEX supports specific diligence, valuation, dispute, and outsourced counsel mandates for companies and legal teams that need focused technical and legal depth.
+              Beyond core practice areas, IP-MEX® supports specific diligence, valuation, dispute, and outsourced counsel mandates for companies and legal teams that need focused technical and legal depth.
             </p>
           </div>
 
@@ -374,7 +374,7 @@ export default function ServicesPage() {
             Build an IP plan that matches the seriousness of the business.
           </h2>
           <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-12 max-w-3xl mx-auto">
-            Engage with IP-MEX to define the right mix of patent, trademark, strategy, diligence, and enforcement support for your organization.
+            Engage with IP-MEX® to define the right mix of patent, trademark, strategy, diligence, and enforcement support for your organization.
           </p>
           <Link
             href="/contact"
