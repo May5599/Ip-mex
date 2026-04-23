@@ -444,7 +444,7 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
-            Contact IP-MEX® Inc. to discuss your patent, trademark, IP strategy, or virtual counsel requirements with our registered legal team.
+            Contact IP-MEX Inc. to discuss your patent, trademark, IP strategy, or virtual counsel requirements with our registered legal team.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -463,7 +463,7 @@ export default function AboutPage() {
           </div>
 
           <p className="text-slate-400 text-sm mt-12">
-            IP-MEX® Inc. | D2-150 Terence Matthews Crescent, Kanata, Ontario | Canada
+            IP-MEX Inc. | D2-150 Terence Matthews Crescent, Kanata, Ontario | Canada
           </p>
 
         </div>

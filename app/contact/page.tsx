@@ -1,9 +1,9 @@
 export const metadata = {
   title: "Contact IP-MEX® | IP Lawyers & Patent Agents | Kanata, Ontario",
   description:
-    "Contact IP-MEX® Inc. in Kanata, Ontario to speak with our registered IP lawyers and patent agents about patents, trademarks, IP strategy, and virtual in-house counsel services.",
+    "Contact IP-MEX Inc. in Kanata, Ontario to speak with our registered IP lawyers and patent agents about patents, trademarks, IP strategy, and virtual in-house counsel services.",
   openGraph: {
-    title: "Contact IP-MEX® Inc.",
+    title: "Contact IP-MEX Inc.",
     description: "Contact our registered IP lawyers and patent agents in Kanata, Ontario for patents, trademarks, IP strategy, and virtual counsel services.",
     type: "website"
   }
@@ -49,7 +49,7 @@ export default function ContactPage() {
             </p>
 
             <form
-              action="https://formsubmit.co/mayank@zapmedia.cc"
+              action="https://formsubmit.co/info@ipmexlaw.com"
               method="POST"
               className="space-y-6"
             >
@@ -181,15 +181,9 @@ export default function ContactPage() {
                   </p>
                 </div>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-1">Phone</p>
-                  <a href="tel:613-831-6003" className="text-neutral-700 hover:text-red-500 transition font-medium">
-                    613-831-6003
-                  </a>
-                </div>
-                <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-1">Email</p>
-                  <a href="mailto:vdonnelly@ip-mex.com" className="text-neutral-700 hover:text-red-500 transition font-medium">
-                    vdonnelly@ip-mex.com
+                  <a href="mailto:info@ipmexlaw.com" className="text-neutral-700 hover:text-red-500 transition font-medium">
+                    info@ipmexlaw.com
                   </a>
                 </div>
               </div>

@@ -20,10 +20,10 @@ export default function Footer() {
               IP-MEX®
             </h3>
             <p className="text-sm leading-relaxed max-w-sm mb-6">
-              IP-MEX® Inc. is a Canadian intellectual property law firm specializing in patents, trademarks, and IP strategy services. Registered patent agents and IP lawyers serving clients across Canada and North America.
+              IP-MEX Inc. is a Canadian intellectual property law firm specializing in patents, trademarks, and IP strategy services. Registered patent agents and IP lawyers serving clients across Canada and North America.
             </p>
             <div className="space-y-2 text-xs text-slate-400">
-              <p>IP-MEX® Inc.</p>
+              <p>IP-MEX Inc.</p>
               <p>D2-150 Terence Matthews Cres.</p>
               <p>Kanata, ON K2M 1X4, Canada</p>
             </div>
@@ -69,8 +69,8 @@ export default function Footer() {
                 </a>
               </p>
               <p>
-                <a href="mailto:vdonnelly@ip-mex.com" className="text-red-500 hover:text-red-400 transition">
-                  vdonnelly@ip-mex.com
+                <a href="mailto:info@ipmexlaw.com" className="text-red-500 hover:text-red-400 transition">
+                  info@ipmexlaw.com
                 </a>
               </p>
             </div>
@@ -81,7 +81,7 @@ export default function Footer() {
         <div className="mt-12 md:mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="space-y-1">
             <p className="text-xs text-slate-500">
-              © {new Date().getFullYear()} IP-MEX® Inc. All rights reserved.
+              © {new Date().getFullYear()} IP-MEX Inc. All rights reserved.
             </p>
             <p className="text-xs text-slate-500">
               IP-MEX® is a registered trademark of IP-MEX Inc.
