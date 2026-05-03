@@ -454,12 +454,6 @@ export default function AboutPage() {
             >
               Contact Us
             </a>
-            <a
-              href="tel:613-831-6003"
-              className="btn-secondary border-red-500 text-white hover:bg-red-500"
-            >
-              Call: 613-831-6003
-            </a>
           </div>
 
           <p className="text-slate-400 text-sm mt-12">

@@ -64,11 +64,6 @@ export default function Footer() {
             </p>
             <div className="space-y-3 text-sm">
               <p>
-                <a href="tel:613-831-6003" className="hover:text-white transition">
-                  Tel: 613-831-6003
-                </a>
-              </p>
-              <p>
                 <a href="mailto:info@ipmexlaw.com" className="text-red-500 hover:text-red-400 transition">
                   info@ipmexlaw.com
                 </a>

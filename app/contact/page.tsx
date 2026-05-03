@@ -101,18 +101,6 @@ export default function ContactPage() {
                     className="w-full border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm"
                   />
                 </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-neutral-700 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    id="phone"
-                    type="tel"
-                    name="phone"
-                    placeholder="+1 (613) 555-0000"
-                    className="w-full border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition text-sm"
-                  />
-                </div>
               </div>
 
               <div>
