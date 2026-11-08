@@ -85,7 +85,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* TEAM   Dr. Daisy Williams (Featured   has photo) */}
+      {/* TEAM */}
       <section className="bg-neutral-50 py-16 md:py-24 xl:py-32 border-t border-neutral-200">
         <div className="max-w-7xl mx-auto px-6">
 
@@ -96,81 +96,6 @@ export default function AboutPage() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-neutral-900 mt-6 mb-12 md:mb-16">
             IP lawyers, registered agents, and prolific inventors
           </h2>
-
-          {/* Dr. Daisy Williams   Featured, with photo */}
-          <div className="bg-white rounded-2xl border border-neutral-200 overflow-hidden mb-10">
-            <div className="grid lg:grid-cols-[320px_1fr]">
-
-              {/* Photo column */}
-              <div className="relative bg-[#0b1220] flex items-stretch min-h-95">
-                <img
-                  src="/images/team/daisy.jpg"
-                  alt="Dr. Daisy Williams   IP Lawyer, Patent Agent, Trademark Agent"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-
-              {/* Bio column */}
-              <div className="p-8 md:p-10 lg:p-12">
-
-                <div className="mb-6">
-                  <h3 className="text-3xl font-semibold text-neutral-900">
-                    Dr. Daisy Williams
-                  </h3>
-                  <p className="text-red-500 font-semibold mt-2 text-lg">
-                    IP Lawyer · Patent Agent · Trademark Agent
-                  </p>
-                  <p className="text-neutral-500 text-sm mt-1">Ph.D Physics (Optics-Photonics & Computer Modeling)</p>
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-6 mb-8 pb-8 border-b border-neutral-100">
-
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-3">Credentials</p>
-                    <ul className="text-sm text-neutral-700 space-y-2">
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Registered Patent Agent, CPATA</li>
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Registered Trademark Agent, CPATA</li>
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Registered to practise before the USPTO</li>
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Called to the Bar (2018), Law Society of Ontario (LSO)</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-3">Education</p>
-                    <ul className="text-sm text-neutral-700 space-y-2">
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Ph.D Physics (Optics-Photonics & Computer Modeling), University of Ottawa</li>
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> Juris Doctor (2017), University of Ottawa</li>
-                      <li className="flex items-start gap-2"><span className="text-red-500 mt-0.5"> </span> B.Sc Physics-Mathematics</li>
-                    </ul>
-                  </div>
-
-                </div>
-
-                <p className="text-neutral-600 text-sm leading-relaxed mb-4">
-                  Dr. Daisy Williams is an IP lawyer with the Law Society of Ontario and a registered patent and trademark agent with CPATA. Her experience spans patent drafting and prosecution, trademark strategy, litigation exposure, in-house portfolio management, and IP training.
-                </p>
-                <p className="text-neutral-600 text-sm leading-relaxed mb-6">
-                  Before returning to IP-MEX®, Daisy practiced IP litigation in Ottawa and later served as in-house IP counsel for an international company, helping manage global patent and trademark matters. She brings a rare mix of legal, technical, and commercial experience to client strategy.
-                </p>
-
-                <div className="grid sm:grid-cols-3 gap-4 pt-6 border-t border-neutral-100">
-                  <div>
-                    <p className="text-xs uppercase tracking-widest text-neutral-400 mb-2">Experience</p>
-                    <p className="text-sm text-neutral-700">10+ years in intellectual property</p>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-widest text-neutral-400 mb-2">Publications</p>
-                    <p className="text-sm text-neutral-700">5 peer-reviewed scientific publications</p>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-widest text-neutral-400 mb-2">Inventor</p>
-                    <p className="text-sm text-neutral-700">3 patents in Canada and the USA</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
 
           {/* Three team members   no photos, elegant monogram layout */}
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
